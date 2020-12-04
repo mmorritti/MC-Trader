@@ -1,23 +1,14 @@
-const http = require("http")
-const fs   = require("fs")
+const express = require("express");
+const path    = require("path");
 
+const app = express();
 
-const port = 2020
-
-
-const server = http.createServer(function(req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    fs.readFile("html/index.html", function(error, data) {
-        if (error) {
-            res.writeHead(404);
-            console.log("Error 404");
-        } 
-        else {
-            res.write(data);
-        }
-
-        res.end();
-    })
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, 'html/home.html'));
 })
 
-server.listen(port, "25.80.62.167");
+app.get("/compra", function(req, res) {
+    res.sendFile(path.join(__dirname, 'html/compra.html'));
+})
+
+app.listen(2020, "25.80.62.167");

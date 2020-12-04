@@ -72,9 +72,13 @@ entities = {
     "Bazuks"         : Entity("Bazuks"        , "bazuks"       , 0.00000000000),
     "Rize"           : Entity("Rize"          , "rize"         , 0.00000000000),
     "Guggi17"        : Entity("Guggi17"       , "guggi17"      , 0.00000000000),
+    "AndrySpartan"   : Entity("AndrySpartan"  , "andry"        , 0.00000000000),
+    "iBlack_Jack_NS" : Entity("iBlack_Jack_NS", "blackjack"    , 0.00000000000),
+    "tellmeCIRKE"    : Entity("tellmeCIRKE"   , "tellme"       , 0.00000000000),
     "ABET.NSE"       : Entity("ABET.NSE"      , "Loryvoski2020", 0.00000000000),
     "NGP.NSE"        : Entity("NGP.NSE"       , "NGP 2020"     , 0.00000000000),
     "BBNK.NSE"       : Entity("BBNK.NSE"      , "Central2030"  , 0.00000000000),
+    "NETHP.NSE"      : Entity("NETHP.NSE"     , "nether"       , 0.00000000000),
     "UNICEF"         : Entity("UNICEF"        , "unicef"       , 0.00000000000),
     "testuser0"      : Entity("testuser0"     , "password1"    , 0.00000000000),
     "dmm"            : Entity("dmm"           , "dfdsfjasfjk"  , 0.00000000000)
@@ -82,9 +86,10 @@ entities = {
 dmm = entities["dmm"]
 
 stocks = {
-    "ABET.NSE": Stock("ABET.NSE", 1.000, 1.000, 100000000.0),
-    "NGP.NSE" : Stock("NGP.NSE" , 670.0, 603.6, 10000000.00),
-    "BBNK.NSE": Stock("BBNK.NSE", 6.000, 6.000, 10000000.00),
+    "ABET.NSE" : Stock("ABET.NSE" , 1.000, 1.000, 100000000.0),
+    "NGP.NSE"  : Stock("NGP.NSE"  , 670.0, 603.6, 10000000.00),
+    "BBNK.NSE" : Stock("BBNK.NSE" , 6.000, 6.000, 10000000.00),
+    "NETHP.NSE": Stock("NETHP.NSE", 0.000, 0.000, 100000.0000),
 }
 
 database = {

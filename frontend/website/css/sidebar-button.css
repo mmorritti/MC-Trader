@@ -1,4 +1,5 @@
 .sidebar-button {
+    background-color:white;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
@@ -10,4 +11,5 @@
     cursor: grab;
     text-align-last: left;
     display: block;
+    border-color: white;
 }
