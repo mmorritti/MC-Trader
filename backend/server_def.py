@@ -66,4 +66,7 @@ class Server:
 
     def out(self, text):
         if self.debug:
-            print(text)
+            if "\n" not in text:
+                print(f"INFO: {text}")
+            else:
+                print(text)

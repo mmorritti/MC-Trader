@@ -1,0 +1,57 @@
+Date : 2020-12-05 15:09:21
+Directory : x:\Programming\Python\NSE Stocks
+Total : 21 files,  1203 codes, 45 comments, 257 blanks, all 1505 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| Python     |         11 |        727 |         45 |        233 |      1,005 |
+| JSON       |          1 |        372 |          0 |          1 |        373 |
+| HTML       |          2 |         60 |          0 |         12 |         72 |
+| CSS        |          4 |         29 |          0 |          4 |         33 |
+| JavaScript |          2 |         13 |          0 |          6 |         19 |
+| Batch      |          1 |          2 |          0 |          1 |          3 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                     | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                        |         21 |      1,203 |         45 |        257 |      1,505 |
+| backend                                                                  |          5 |        607 |         26 |        189 |        822 |
+| frontend                                                                 |         10 |        530 |         15 |         43 |        588 |
+| frontend\website                                                         |          9 |        474 |          0 |         23 |        497 |
+| frontend\website\css                                                     |          4 |         29 |          0 |          4 |         33 |
+| frontend\website\html                                                    |          2 |         60 |          0 |         12 |         72 |
+| frontend\website\js                                                      |          1 |          3 |          0 |          1 |          4 |
+| pyinstaller                                                              |          2 |         18 |          4 |          4 |         26 |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                 | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| x:\Programming\Python\NSE Stocks\backend\commands.py                     | Python     |        132 |         10 |         43 |        185 |
+| x:\Programming\Python\NSE Stocks\backend\database.py                     | Python     |        154 |          6 |         43 |        203 |
+| x:\Programming\Python\NSE Stocks\backend\main_server.py                  | Python     |         48 |          0 |         14 |         62 |
+| x:\Programming\Python\NSE Stocks\backend\server.py                       | Python     |        223 |         10 |         69 |        302 |
+| x:\Programming\Python\NSE Stocks\backend\server_def.py                   | Python     |         50 |          0 |         20 |         70 |
+| x:\Programming\Python\NSE Stocks\console.py                              | Python     |         25 |          0 |         12 |         37 |
+| x:\Programming\Python\NSE Stocks\frontend\client.py                      | Python     |         56 |         15 |         20 |         91 |
+| x:\Programming\Python\NSE Stocks\frontend\website\css\page.css           | CSS        |          5 |          0 |          1 |          6 |
+| x:\Programming\Python\NSE Stocks\frontend\website\css\sidebar-button.css | CSS        |         15 |          0 |          1 |         16 |
+| x:\Programming\Python\NSE Stocks\frontend\website\css\sidebar.css        | CSS        |          4 |          0 |          1 |          5 |
+| x:\Programming\Python\NSE Stocks\frontend\website\css\titlebar.css       | CSS        |          5 |          0 |          1 |          6 |
+| x:\Programming\Python\NSE Stocks\frontend\website\html\compra.html       | HTML       |         30 |          0 |          6 |         36 |
+| x:\Programming\Python\NSE Stocks\frontend\website\html\home.html         | HTML       |         30 |          0 |          6 |         36 |
+| x:\Programming\Python\NSE Stocks\frontend\website\index.js               | JavaScript |         10 |          0 |          5 |         15 |
+| x:\Programming\Python\NSE Stocks\frontend\website\js\help.js             | JavaScript |          3 |          0 |          1 |          4 |
+| x:\Programming\Python\NSE Stocks\frontend\website\package-lock.json      | JSON       |        372 |          0 |          1 |        373 |
+| x:\Programming\Python\NSE Stocks\pyinstaller\futurize-script.py          | Python     |          9 |          2 |          2 |         13 |
+| x:\Programming\Python\NSE Stocks\pyinstaller\pasteurize-script.py        | Python     |          9 |          2 |          2 |         13 |
+| x:\Programming\Python\NSE Stocks\run.py                                  | Python     |          9 |          0 |          3 |         12 |
+| x:\Programming\Python\NSE Stocks\start.bat                               | Batch      |          2 |          0 |          1 |          3 |
+| x:\Programming\Python\NSE Stocks\test.py                                 | Python     |         12 |          0 |          5 |         17 |
+| Total                                                                    |            |      1,203 |         45 |        257 |      1,505 |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+

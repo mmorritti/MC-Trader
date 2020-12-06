@@ -42,7 +42,7 @@ except:
     exit()
 
 
-def recieve():
+def recieve(): 
     while True:
         try:
             message = client.recv(100_000).decode("utf-8")
@@ -66,6 +66,7 @@ def recieve():
             print("Qualcosa è andato storto durante uno scambio di informazioni tra server e client.")
             client.close()
             break
+
 
 def write():
     while True:

@@ -94,10 +94,10 @@ def stock(client, stocks):
 def buy(client, name, entities, stocks, market, dmm):
     from texttable import Texttable
 
-    arr               =   [["ID", "TICKER", "PREZZO", "QUANTITÀ", "QUOTA"]]
+    arr               =   [["ID", "TICKER", "PREZZO", "TOTALE", "QUANTITÀ", "QUOTA"]]
     table             =   Texttable()
-    table.set_cols_align( ["m", "l", "r", "r", "r"])
-    table.set_cols_valign(["m", "m", "m", "m", "m"])
+    table.set_cols_align( ["m", "l", "r", "r", "r", "r"])
+    table.set_cols_valign(["m", "m", "m", "m", "m", "m"])
 
     for index, item in enumerate(market):
         stock_name   = item["name"]
@@ -107,7 +107,7 @@ def buy(client, name, entities, stocks, market, dmm):
         stock_tot    = item["tot"]
         steak        = round(stock_amount / stocks[stock_name].amount * 100, 4)
 
-        arr.append([index, stock_name, f"{stock_price:,}", f"{stock_amount:,}", f"{steak}%"])
+        arr.append([index, stock_name, f"{stock_price:,}", f"{stock_tot:,}", f"{stock_amount:,}", f"{steak}%"])
 
     table.add_rows(arr)
     string = table.draw() + "\n"

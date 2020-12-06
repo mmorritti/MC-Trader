@@ -1,0 +1,238 @@
+('25.80.62.167', 55008) is now connected to the server
+
+
+Server Raised Exception
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+('25.80.62.167', 55017) is now connected to the server
+BBNK.NSE joined with IP address ('25.80.62.167', 55017) and password 'Central2030'
+user BBNK.NSE issued server command 'vendi'
+user BBNK.NSE issued server command 'vendi'
+user BBNK.NSE issued server command 'vendi'
+user BBNK.NSE issued server command 'vendi'
+user BBNK.NSE issued server command 'vendi'
+user BBNK.NSE issued server command 'vendi'
+user BBNK.NSE issued server command 'vendi'
+user BBNK.NSE issued server command 'compra'
+user BBNK.NSE issued server command 'borsa'
+for stock in db.stocks: db.stocks[stock].prec = db.stocks[stock].price
+user BBNK.NSE issued server command 'borsa'
+print(db.entities["NETHP.NSE"].portfolio)
+{'NETHP.NSE': 100000}
+('25.36.101.241', 53025) is now connected to the server
+AndrySpartan joined with IP address ('25.36.101.241', 53025) and password 'andry'
+('25.96.158.174', 56913) is now connected to the server
+
+
+Server Raised Exception
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+user AndrySpartan issued server command 'borsa'
+user AndrySpartan issued server command 'aiuto'
+('25.85.89.219', 62512) is now connected to the server
+
+
+Server Raised Exception
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+user BBNK.NSE issued server command 'aiuto'
+('25.85.89.219', 62515) is now connected to the server
+user AndrySpartan issued server command 'portafoglio'
+
+
+Server Raised Exception
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+('25.85.89.219', 62519) is now connected to the server
+user  NETHP.NSE tried to log in!
+andry = db.entities["AndrySpartan"]
+
+
+Server Raised Exception:
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+ NETHP.NSE lost connection
+('25.85.89.219', 62520) is now connected to the server
+andry.portfolio.__setitem__("NGP.NSE", 7500)
+NETHP.NSE joined with IP address ('25.85.89.219', 62520) and password 'nether'
+user NETHP.NSE issued server command 'borsa'
+abet = db.entities["ABET.NSE"]
+abet.portfolio.__setitemuser NETHP.NSE issued server command 'portafoglio'
+print(abet.protfolio)
+'Entity' object has no attribute 'protfolio'
+print(abet.portfolio)
+{'ABET.NSE': 100000000}
+abet.portfolio.__setitem__("NGP.NSE", 50000)
+('25.80.62.167', 55175) is now connected to the server
+ABET.NSE joined with IP address ('25.80.62.167', 55175) and password 'Loryvoski2020'
+user ABET.NSE issued server command 'portafoglio'
+user AndrySpartan issued server command 'compra'
+
+
+Server Raised Exception:
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+user AndrySpartan issued server command 'vendi'
+
+
+Server Raised Exception:
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+AndrySpartan lost connection
+('25.36.101.241', 53117) is now connected to the server
+AndrySpartan joined with IP address ('25.36.101.241', 53117) and password 'andry'
+user AndrySpartan issued server command 'portafoglio'
+user AndrySpartan issued server command 'borsa'
+user NETHP.NSE issued server command 'vendi'
+user NETHP.NSE issued server command 'vendi'
+user NETHP.NSE issued server command 'vendi'
+user NETHP.NSE issued server command 'vendi'
+user AndrySpartan issued server command 'vendi'
+user AndrySpartan issued server command 'compra'
+user NETHP.NSE issued server command 'vendi'
+user NETHP.NSE issued server command 'vendi'
+
+
+Server Raised Exception:
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+ABET.NSE lost connection
+user NETHP.NSE issued server command 'vendi'
+user BBNK.NSE issued server command 'compra'
+user BBNK.NSE issued server command 'compra'
+user BBNK.NSE issued server command 'compra'
+user BBNK.NSE issued server command 'compra'
+user AndrySpartan issued server command 'compra'
+user BBNK.NSE issued server command 'portafoglio'
+user BBNK.NSE issued server command 'vendi'
+('25.80.62.167', 55236) is now connected to the server
+tzyvoski joined with IP address ('25.80.62.167', 55236) and password 'Almirox2005'
+user tzyvoski issued server command 'compra'
+db.entities["tzyvoski"].balance += 10_000_000
+user tzyvoski issued server command 'portafoglio'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'compra'
+
+
+Server Raised Exception:
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+AndrySpartan lost connection
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'compra'
+user BBNK.NSE issued server command 'vendi'
+user BBNK.NSE issued server command 'vendi'
+user BBNK.NSE issued server command 'compra'
+
+
+Server Raised Exception:
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+NETHP.NSE lost connection
+('25.85.89.219', 62550) is now connected to the server
+('25.36.101.241', 53180) is now connected to the server
+NETHP.NSE joined with IP address ('25.85.89.219', 62550) and password 'nether'
+user NETHP.NSE issued server command 'borsa'
+AndrySpartan joined with IP address ('25.36.101.241', 53180) and password 'andry'
+user AndrySpartan issued server command 'borsa'
+user AndrySpartan issued server command 'compra'
+
+
+Server Raised Exception:
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+NETHP.NSE lost connection
+user BBNK.NSE issued server command 'borsa'
+db.stocks["NETHP.NSE"].ipo = 80
+db.stocks["NETHP.NSE"].month = 80
+db.stocks["NETHP.NSE"].prec = 80
+user BBNK.NSE issued server command 'borsa'
+user BBNK.NSE issued server command 'portafoglio'
+user tzyvoski issued server command 'portafoglio'
+('25.80.62.167', 55261) is now connected to the server
+ABET.NSE joined with IP address ('25.80.62.167', 55261) and password 'Loryvoski2020'
+user ABET.NSE issued server command 'vendi'
+user ABET.NSE issued server command 'vendi'
+user AndrySpartan issued server command 'portafoglio'
+user ABET.NSE issued server command 'vendi'
+user ABET.NSE issued server command 'vendi'
+user BBNK.NSE issued server command 'compra'
+user BBNK.NSE issued server command 'compra'
+print(dmm.balance)
+name 'dmm' is not defined
+print(db.dmm.balance)
+774007.6799999999
+user AndrySpartan issued server command 'compra'
+user AndrySpartan issued server command 'portafoglio'
+
+
+Server Raised Exception:
+        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+AndrySpartan lost connection
+user BBNK.NSE issued server command 'compra'
+user BBNK.NSE issued server command 'borsa'
+user BBNK.NSE issued server command 'portafoglio'
+user ABET.NSE issued server command 'portafoglio'
+db.saveall()
+print(db.dmm.balance)
+779707.6799999999
+user BBNK.NSE issued server command 'compra'
+user BBNK.NSE issued server command 'portafoglio'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'compra'
+user BBNK.NSE issued server command 'portafoglio'
+user tzyvoski issued server command 'portafoglio'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'portafoglio'
+
+user tzyvoski issued server command 'borsa'
+db.saveall()
+user tzyvoski issued server command 'compra'
+1 / 0
+division by zero
+ ser tzyvoski issued server command 'vendi'
+user tzyvoski issued server command 'vendi'
+user tzyvoski issued server command 'compra'
+user ABET.NSE issued server command 'vendi'
+user ABET.NSE issued server command 'vendi'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'portafoglio'
+user tzyvoski issued server command 'compra'
+user tzyvoski issued server command 'portafoglio'
+user ABET.NSE issued server command 'portafoglio'
+user ABET.NSE issued server command 'compra'
+user ABET.NSE issued server command 'compra'
+user tzyvoski issued server command 'borsa'
+user tzyvoski issued server command 'vendi'
+user ABET.NSE issued server command 'compra'
+user tzyvoski issued server command 'portafoglio'
+user tzyvoski issued server command 'borsa'
+user tzyvoski issued server command 'portafoglio'
+user BBNK.NSE issued server command 'vendi'
+user tzyvoski issued server command 'compra'
+db.saveall()
+user ABET.NSE issued server command 'portafoglio'
+user tzyvoski issued server command 'borsa'
+user tzyvoski issued server command 'portafoglio'
+print(db.dmm.balance)
+849760.6799999999
+user ABET.NSE issued server command 'compra'
+user ABET.NSE issued server command 'compra'
+user tzyvoski issued server command 'portafoglio'
+user tzyvoski issued server command 'vendi'
+user ABET.NSE issued server command 'portafoglio'
+user tzyvoski issued server command 'vendi'
+user ABET.NSE issued server command 'compra'
+user ABET.NSE issued server command 'portafoglio'
+user ABET.NSE issued server command 'vendi'
+user tzyvoski issued server command 'compra'
+user ABET.NSE issued server command 'portafoglio'
+user ABET.NSE issued server command 'compra'
+user tzyvoski issued server command 'portafoglio'
+user ABET.NSE issued server command 'vendi'
+user tzyvoski issued server command 'compra'
+user ABET.NSE issued server command 'portafoglio'
+user ABET.NSE issued server command 'compra'
+db.saveall()
+user tzyvoski issued server command 'portafoglio'
+user tzyvoski issued server command 'borsa'
+db.saveall()
+user BBNK.NSE issued server command 'compra'
+db.saveall()

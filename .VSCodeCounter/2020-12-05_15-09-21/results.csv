@@ -1,0 +1,23 @@
+"filename", "language", "Python", "JavaScript", "HTML", "CSS", "Batch", "JSON", "comment", "blank", "total"
+"x:\Programming\Python\NSE Stocks\backend\commands.py", "Python", 132, 0, 0, 0, 0, 0, 10, 43, 185
+"x:\Programming\Python\NSE Stocks\backend\database.py", "Python", 154, 0, 0, 0, 0, 0, 6, 43, 203
+"x:\Programming\Python\NSE Stocks\backend\main_server.py", "Python", 48, 0, 0, 0, 0, 0, 0, 14, 62
+"x:\Programming\Python\NSE Stocks\backend\server.py", "Python", 223, 0, 0, 0, 0, 0, 10, 69, 302
+"x:\Programming\Python\NSE Stocks\backend\server_def.py", "Python", 50, 0, 0, 0, 0, 0, 0, 20, 70
+"x:\Programming\Python\NSE Stocks\console.py", "Python", 25, 0, 0, 0, 0, 0, 0, 12, 37
+"x:\Programming\Python\NSE Stocks\frontend\client.py", "Python", 56, 0, 0, 0, 0, 0, 15, 20, 91
+"x:\Programming\Python\NSE Stocks\frontend\website\css\page.css", "CSS", 0, 0, 0, 5, 0, 0, 0, 1, 6
+"x:\Programming\Python\NSE Stocks\frontend\website\css\sidebar-button.css", "CSS", 0, 0, 0, 15, 0, 0, 0, 1, 16
+"x:\Programming\Python\NSE Stocks\frontend\website\css\sidebar.css", "CSS", 0, 0, 0, 4, 0, 0, 0, 1, 5
+"x:\Programming\Python\NSE Stocks\frontend\website\css\titlebar.css", "CSS", 0, 0, 0, 5, 0, 0, 0, 1, 6
+"x:\Programming\Python\NSE Stocks\frontend\website\html\compra.html", "HTML", 0, 0, 30, 0, 0, 0, 0, 6, 36
+"x:\Programming\Python\NSE Stocks\frontend\website\html\home.html", "HTML", 0, 0, 30, 0, 0, 0, 0, 6, 36
+"x:\Programming\Python\NSE Stocks\frontend\website\index.js", "JavaScript", 0, 10, 0, 0, 0, 0, 0, 5, 15
+"x:\Programming\Python\NSE Stocks\frontend\website\js\help.js", "JavaScript", 0, 3, 0, 0, 0, 0, 0, 1, 4
+"x:\Programming\Python\NSE Stocks\frontend\website\package-lock.json", "JSON", 0, 0, 0, 0, 0, 372, 0, 1, 373
+"x:\Programming\Python\NSE Stocks\pyinstaller\futurize-script.py", "Python", 9, 0, 0, 0, 0, 0, 2, 2, 13
+"x:\Programming\Python\NSE Stocks\pyinstaller\pasteurize-script.py", "Python", 9, 0, 0, 0, 0, 0, 2, 2, 13
+"x:\Programming\Python\NSE Stocks\run.py", "Python", 9, 0, 0, 0, 0, 0, 0, 3, 12
+"x:\Programming\Python\NSE Stocks\start.bat", "Batch", 0, 0, 0, 0, 2, 0, 0, 1, 3
+"x:\Programming\Python\NSE Stocks\test.py", "Python", 12, 0, 0, 0, 0, 0, 0, 5, 17
+"Total", "-", 727, 13, 60, 29, 2, 372, 45, 257, 1505

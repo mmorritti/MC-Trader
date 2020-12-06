@@ -139,11 +139,13 @@ class Database(Server):
                 break
 
 
-db_server = Database(address="localhost", port=5001)
+db_server = Database(address="localhost", port=5001, debug=True)
 
 
 def saveall():
     import pickle
+
+    db_server.out("About to save all data...")
 
     for entity in entities:
         for attr in ["password", "balance", "portfolio"]:
@@ -166,13 +168,17 @@ def saveall():
                 continue
 
     try:
-        pickle.dump(market, open("saves\\market.dat", "wb"))
+        pickle.dump(str(market), open("saves\\market.dat", "wb"))
     except:
         pass
+
+    db_server.out("Saved all data")
 
 
 def loadall():
     import pickle
+
+    db_server.out("About to load data...")
 
     for entity in entities:
         for attr in ["password", "balance", "portfolio"]:
@@ -183,7 +189,6 @@ def loadall():
             except:
                 continue
 
-
     for stock in stocks:
         for attr in ["price", "amount", "prec", "month", "ipo"]:
             try:
@@ -193,10 +198,22 @@ def loadall():
             except:
                 continue
 
+    db_server.out("Loaded all data")
+
+
+def load_market():
+    import pickle
+
+    db_server.out("About to load market data...")
+
     try:
-        market = pickle.load(open("saves\\market.dat", "rb"))
+        loaded = pickle.load(open("saves\\market.dat", "rb"))
+        return eval(loaded)
+        db_server.out("Loaded all market data")
     except:
-        pass
+        db_server.out("Failed to load market data!")
+        return []
 
 
 loadall()
+market = load_market()
