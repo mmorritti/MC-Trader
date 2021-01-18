@@ -11,4 +11,4 @@ app.get("/compra", function(req, res) {
     res.sendFile(path.join(__dirname, 'html/compra.html'));
 })
 
-app.listen(2020, "25.80.62.167");
+app.listen(2020, "localhost");

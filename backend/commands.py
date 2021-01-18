@@ -1,10 +1,10 @@
 from asciichartpy import plot
 
 
-def wallet(client, username, stocks, entities):
+def wallet(client, username, stocks, users):
     from texttable import Texttable
     
-    user              = entities[username]
+    user              = users[username]
     usr_stocks        = user.portfolio
     total_stock_value = 0
     total_amount      = 0
@@ -27,74 +27,85 @@ def wallet(client, username, stocks, entities):
     table.add_rows(arr)
     string = table.draw()
     string += f"\n\nSaldo carta: ${user.balance:,}\n"
-    client.send(string.encode("utf-8"))
+    client.sendall(string.encode("utf-8"))
 
 
-def sell(client, name, stocks, entities, dmm):
-    client.send("\nInserire ticker titolo".encode("utf-8"))
-    client.send("[Internal] CLN_ASK".encode("utf-8"))
-    stock      = client.recv(1024).decode("utf-8")
-    usr_stocks = entities[name].portfolio
+def sell(client, name, stocks, users, market, dmm):
+    if len(market) <= 11:
+        client.sendall("\nInserire ticker titolo\n".encode("utf-8"))
+        client.sendall("[Internal] CLN_ASK".encode("utf-8"))
+        stock      = client.recv(1024).decode("utf-8")
+        usr_stocks = users[name].portfolio
 
-    if stock in usr_stocks:
-        _stock           = stocks[stock]
-        stock_max_amount = usr_stocks[stock]
+        if stock in usr_stocks:
+            _stock           = stocks[stock]
+            stock_max_amount = usr_stocks[stock]
 
-        client.send("\nInserire quantità di titoli da piazzare sul mercato".encode("utf-8"))
-        client.send("[Internal] CLN_ASK".encode("utf-8"))
-        stock_amount     = int(client.recv(1024).decode("utf-8"))
+            client.sendall("\nInserire quantità di titoli da piazzare sul mercato\n".encode("utf-8"))
+            client.sendall("[Internal] CLN_ASK".encode("utf-8"))
+            stock_amount     = int(client.recv(1024).decode("utf-8"))
 
-        if stock_amount <= stock_max_amount:
-            client.send("\nSpecificare il prezzo di un singolo titolo".encode("utf-8"))
-            client.send("[Internal] CLN_ASK".encode("utf-8"))
-            stock_price  = float(client.recv(1024).decode("utf-8"))
+            if stock_amount <= stock_max_amount:
+                client.sendall("\nSpecificare il prezzo di un singolo titolo\n".encode("utf-8"))
+                client.sendall("[Internal] CLN_ASK".encode("utf-8"))
+                stock_price  = float(client.recv(1024).decode("utf-8"))
 
-            result = {
-                "name"  : stock,
-                "amount": stock_amount,
-                "price" : stock_price,
-                "tot"   : float(stock_price * stock_amount),
-                "seller": entities[name].username
-            }
+                result = {
+                    "name"  : stock,
+                    "amount": stock_amount,
+                    "price" : round(float(stock_price), 2),
+                    "tot"   : round(int(stock_price * stock_amount)),
+                    "seller": users[name].username
+                }
 
-            stocks[stock].exchange(entities[name].username, dmm.username, stock_amount)
+                stocks[stock].exchange(users[name].username, dmm.username, stock_amount)
 
-            client.send("\nTitolo piazzato sul mercato con successo".encode("utf-8"))
-            return result
+                client.sendall("\nTitolo piazzato sul mercato con successo\n".encode("utf-8"))
+                return result
+            else:
+                client.sendall("\nNon possiedi la quantità specificata di titoli\n".encode("utf-8"))
+                return False
         else:
-            client.send("\nNon possiedi la quantità specificata di titoli".encode("utf-8"))
+            client.sendall("[Internal] INV_TICKER".encode("utf-8"))
             return False
     else:
-        client.send("[Internal] INV_TICKER".encode("utf-8"))
+        client.sendall("Il mercato è già pieno, devi acquistare qualcosa o aspettare che qualcuno lo faccia\n".encode("utf-8"))
         return False
 
 
 def stock(client, stocks):
     from texttable import Texttable
 
-    arr               =   [["N.", "TICKER", "PREZZO", "CAPITALE", "INCREMENTO", "30 DAY", "IPO"]]
-    table             =   Texttable()
-    table.set_cols_align( ["m", "l", "r", "r", "r", "r", "r"])
-    table.set_cols_valign(["m", "m", "m", "m", "m", "m", "m"])
+    def sort(e):
+        import backend.database as dbb
+        return dbb.stocks[e].price * dbb.stocks[e].amount
 
-    for index, stock in enumerate(stocks.keys()):
+    arr               =   [["TICKER", "PREZZO", "VALORE", "VARIAZIONE", "30 DAY", "IPO"]]
+    table             =   Texttable()
+    table.set_cols_align( ["l", "r", "r", "r", "r", "r"])
+    table.set_cols_valign(["m", "m", "m", "m", "m", "m"])
+
+    stocks_list = list(stocks.keys())
+    stocks_list.sort(key=sort, reverse=True)
+
+    for stock in stocks_list:
         stock_name         = str(stock)
-        stock_value        = int(stocks[stock_name].price * stocks[stock].amount)
+        stock_value        = int(round(stocks[stock_name].price * stocks[stock].amount))
         increment          = round((stocks[stock].price - stocks[stock].prec) / stocks[stock].prec * 100, 2)
         month_increment    = round((stocks[stock].price - stocks[stock].month) / stocks[stock].month * 100, 2)
         ipo                = stocks[stock].ipo
-        arr.append         ( [index + 1, stock_name, f"{stocks[stock].price:,}", f"{stock_value:,}", f"{increment:,}%", f"{month_increment:,}%", f"{ipo:,}"])
+        arr.append         ( [stock_name, f"{round(float(round(stock_value) / stocks[stock].amount), 2):.2f}", f"{round(stock_value):,}", f"{increment:+,.2f}%", f"{month_increment:+,.2f}%", f"{ipo:,}"])
 
     table.add_rows(arr)
-    string = table.draw()
+    string = table.draw() + "\n"
 
-    client.send(string.encode("utf-8"))
+    client.sendall(string.encode("utf-8"))
 
 
-def buy(client, name, entities, stocks, market, dmm):
+def buy(client, name, users, stocks, market, dmm):
     from texttable import Texttable
 
-    arr               =   [["ID", "TICKER", "PREZZO", "TOTALE", "QUANTITÀ", "QUOTA"]]
+    arr               =   [["ID", "TICKER", "PREZZO", "QUANTITÀ", "TOTALE", "QUOTA"]]
     table             =   Texttable()
     table.set_cols_align( ["m", "l", "r", "r", "r", "r"])
     table.set_cols_valign(["m", "m", "m", "m", "m", "m"])
@@ -103,19 +114,19 @@ def buy(client, name, entities, stocks, market, dmm):
         stock_name   = item["name"]
         stock_seller = item["seller"]
         stock_amount = item["amount"]
-        stock_price  = item["price"]
-        stock_tot    = item["tot"]
+        stock_price  = float(item["price"])
+        stock_tot    = round(int(item["tot"]))
         steak        = round(stock_amount / stocks[stock_name].amount * 100, 4)
 
-        arr.append([index, stock_name, f"{stock_price:,}", f"{stock_tot:,}", f"{stock_amount:,}", f"{steak}%"])
+        arr.append([index, stock_name, f"{stock_price:,}", f"{stock_amount:,}", f"{stock_tot:,}", f"{steak}%"])
 
     table.add_rows(arr)
     string = table.draw() + "\n"
-    string += "\n\nInserire l'ID del titolo che si vuole acquistare"
+    string += "\n\nInserire l'ID del titolo che si vuole acquistare\n"
 
-    client.send(string.encode("utf-8"))
+    client.sendall(string.encode("utf-8"))
 
-    client.send("[Internal] CLN_ASK".encode("utf-8"))
+    client.sendall("[Internal] CLN_ASK".encode("utf-8"))
     id = int(client.recv(1024).decode("utf-8"))
 
     if id < len(market):
@@ -123,27 +134,27 @@ def buy(client, name, entities, stocks, market, dmm):
         _name   = trade["name"]
         seller = trade["seller"]
         amount = trade["amount"]
-        price  = trade["price"]
-        tot    = trade["tot"]
-        buyer  = entities[name]
+        price  = round(float(trade["price"]), 3)
+        tot    = int(trade["tot"])
+        buyer  = users[name]
 
         if buyer.balance >= tot:
             stock  = stocks[_name]
             stock.exchange(dmm.username, name, amount)
-            buyer.pay(seller, tot)
+            buyer.pay(seller, price * amount)
 
-            commission = float(tot / 100 * 3)
+            commission = round(tot / 100 * 3)
             buyer.pay(dmm.username, commission)
 
             stocks[_name].price = price
 
-            client.send("Transazione completata".encode("utf-8"))
+            client.sendall("Transazione completata\n".encode("utf-8"))
             return id
         else:
-            client.send("Non disponi di abbastanza soldi per poter effettuare la transazione".encode("utf-8"))
+            client.sendall("Non disponi di abbastanza soldi per poter effettuare la transazione\n".encode("utf-8"))
             return False
     else:
-        client.send("ID non valido".encode("utf-8"))
+        client.sendall("ID non valido\n".encode("utf-8"))
         return False
 
 
@@ -181,4 +192,4 @@ Permette alle società di finanziare i propri progetti e agli investitori di gua
 Il mercato del server è sicuro e robusto, anche in caso di perdita la maggior parte dei titoli sono garantiti o dallo Stato o da chi li emette.
 """
 
-    client.send(string.encode("utf-8"))
+    client.sendall(string.encode("utf-8"))

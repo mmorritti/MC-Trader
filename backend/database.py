@@ -3,7 +3,7 @@ import threading
 import backend.commands as commands
 
 
-class Entity:
+class User:
     def __init__(self, username, password, bal):
         self.username  = str(username)
         self.password  = str(password)
@@ -35,8 +35,8 @@ class Entity:
 
 
     def pay(self, who, amount):
-        if who in entities:
-            reciever = entities[who]
+        if who in users:
+            reciever = users[who]
             reciever.balance  += float(amount)
             self.balance -= float(amount)
             return True
@@ -55,8 +55,8 @@ class Stock:
 
 
     def exchange(self, from_, to_, amount):
-        seller = entities[from_]
-        buyer  = entities[to_]
+        seller = users[from_]
+        buyer  = users[to_]
 
         if seller.remv(self.ticker, amount):
             buyer.add(self.ticker, amount)
@@ -65,35 +65,37 @@ class Stock:
             return False
         
 
-entities = {
-    "tzyvoski"       : Entity("tzyvoski"      , "Almirox2005"  , 0.00000000000),
-    "XfanX46"        : Entity("XfanX46"       , "xfanx"        , 0.00000000000),
-    "Lory5"          : Entity("Lory5"         , "lroy"         , 0.00000000000),
-    "Bazuks"         : Entity("Bazuks"        , "bazuks"       , 0.00000000000),
-    "Rize"           : Entity("Rize"          , "rize"         , 0.00000000000),
-    "Guggi17"        : Entity("Guggi17"       , "guggi17"      , 0.00000000000),
-    "AndrySpartan"   : Entity("AndrySpartan"  , "andry"        , 0.00000000000),
-    "iBlack_Jack_NS" : Entity("iBlack_Jack_NS", "blackjack"    , 0.00000000000),
-    "tellmeCIRKE"    : Entity("tellmeCIRKE"   , "tellme"       , 0.00000000000),
-    "ABET.NSE"       : Entity("ABET.NSE"      , "Loryvoski2020", 0.00000000000),
-    "NGP.NSE"        : Entity("NGP.NSE"       , "NGP 2020"     , 0.00000000000),
-    "BBNK.NSE"       : Entity("BBNK.NSE"      , "Central2030"  , 0.00000000000),
-    "NETHP.NSE"      : Entity("NETHP.NSE"     , "nether"       , 0.00000000000),
-    "UNICEF"         : Entity("UNICEF"        , "unicef"       , 0.00000000000),
-    "testuser0"      : Entity("testuser0"     , "password1"    , 0.00000000000),
-    "dmm"            : Entity("dmm"           , "dfdsfjasfjk"  , 0.00000000000)
+users = {
+    "tzyvoski"       : User("tzyvoski"      , "Almirox2005"  , 0.00000000000),
+    "XfanX46"        : User("XfanX46"       , "xfanx"        , 0.00000000000),
+    "Lory5"          : User("Lory5"         , "lroy"         , 0.00000000000),
+    "Bazuks"         : User("Bazuks"        , "bazuks"       , 0.00000000000),
+    "Rize"           : User("Rize"          , "rize"         , 0.00000000000),
+    "Guggi17"        : User("Guggi17"       , "guggi17"      , 0.00000000000),
+    "AndrySpartan"   : User("AndrySpartan"  , "andry"        , 0.00000000000),
+    "iBlack_Jack_NS" : User("iBlack_Jack_NS", "blackjack"    , 0.00000000000),
+    "tellmeCIRKE"    : User("tellmeCIRKE"   , "tellme"       , 0.00000000000),
+    "Gock"           : User("Gock"          , "gock"         , 0.00000000000),
+    "ABET"           : User("ABET"          , "Loryvoski2020", 0.00000000000),
+    "NEXT"           : User("NEXT"          , "NGP 2020"     , 0.00000000000),
+    "BBNK"           : User("BBNK"          , "Central2030"  , 0.00000000000),
+    "NTHP"           : User("NTHP"          , "nether"       , 0.00000000000),
+    "UNICEF"         : User("UNICEF"        , "unicef"       , 0.00000000000),
+    "dmm"            : User("dmm"           , "dfdsfjasfjk"  , 0.00000000000)
 }
-dmm = entities["dmm"]
+dmm = users["dmm"]
 
 stocks = {
-    "ABET.NSE" : Stock("ABET.NSE" , 1.000, 1.000, 100000000.0),
-    "NGP.NSE"  : Stock("NGP.NSE"  , 670.0, 603.6, 10000000.00),
-    "BBNK.NSE" : Stock("BBNK.NSE" , 6.000, 6.000, 10000000.00),
-    "NETHP.NSE": Stock("NETHP.NSE", 0.000, 0.000, 100000.0000),
+    "ABET"  : Stock("ABET"  , 1.000, 1.000, 100000000.0),
+    "NEXT"  : Stock("NEXT"  , 670.0, 603.6, 10000000.00),
+    "BBNK"  : Stock("BBNK"  , 6.000, 6.000, 10000000.00),
+    "NTHP"  : Stock("NTHP"  , 0.000, 0.000, 100000.0000),
+    "RWAY"  : Stock("RWAY"  , 2.000, 2.000, 1036800.000),
+    "TIME"  : Stock("TIME"  , 0.000, 0.000, 3000000.000),
 }
 
 database = {
-    "entities": entities,
+    "users": users,
     "stocks"  : stocks,
     "dmm"     : dmm
 }
@@ -102,14 +104,14 @@ market  = []
 
 cmd = {
     "borsa": "commands.stock(client, stocks)",
-    "portafoglio": "commands.wallet(client, name, stocks, entities)",
+    "portafoglio": "commands.wallet(client, name, stocks, users)",
     "vendi": """
-r = commands.sell(client, name, stocks, entities, dmm)
+r = commands.sell(client, name, stocks, users, market, dmm)
 if r is not False:
     market.append(r)
 """,
     "compra": """
-r = commands.buy(client, name, entities, stocks, market, dmm)
+r = commands.buy(client, name, users, stocks, market, dmm)
 if r is not False:
     market.pop(r)
 """,
@@ -127,7 +129,7 @@ class Database(Server):
                 req = eval(client.recv(1024).decode("utf-8"))
 
                 if req["command"] == "GET_DATA":
-                    client.send(str(database[req["request"]]).encode("utf-8"))
+                    client.sendall(str(database[req["request"]]).encode("utf-8"))
             except Exception as e:
                 if client in self.clients:
                     self.clients.remove(client)
@@ -139,7 +141,7 @@ class Database(Server):
                 break
 
 
-db_server = Database(address="localhost", port=5001, debug=True)
+db_server = Database(address="localhost", port=5001, name="Database", debug=True)
 
 
 def saveall():
@@ -147,11 +149,11 @@ def saveall():
 
     db_server.out("About to save all data...")
 
-    for entity in entities:
+    for User in users:
         for attr in ["password", "balance", "portfolio"]:
             try:
-                attribute = getattr(entities[entity], attr)
-                directory = f"saves\\entities\\{entities[entity].username}\\{attr}.dat"
+                attribute = getattr(users[User], attr)
+                directory = f"saves\\users\\{users[User].username}\\{attr}.dat"
 
                 pickle.dump(attribute, open(directory, "wb"))
             except:
@@ -180,14 +182,15 @@ def loadall():
 
     db_server.out("About to load data...")
 
-    for entity in entities:
+    for User in users:
         for attr in ["password", "balance", "portfolio"]:
             try:
-                directory = directory = f"saves\\entities\\{entities[entity].username}\\{attr}.dat"
+                directory = directory = f"saves\\users\\{users[User].username}\\{attr}.dat"
                 attribute = pickle.load(open(directory, "rb"))
-                setattr(entities[entity], attr, attribute)
+                setattr(users[User], attr, attribute)
             except:
                 continue
+
 
     for stock in stocks:
         for attr in ["price", "amount", "prec", "month", "ipo"]:
@@ -197,6 +200,8 @@ def loadall():
                 setattr(stocks[stock], attr, attribute)
             except:
                 continue
+
+    
 
     db_server.out("Loaded all data")
 
@@ -208,8 +213,8 @@ def load_market():
 
     try:
         loaded = pickle.load(open("saves\\market.dat", "rb"))
-        return eval(loaded)
         db_server.out("Loaded all market data")
+        return eval(loaded)
     except:
         db_server.out("Failed to load market data!")
         return []

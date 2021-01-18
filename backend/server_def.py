@@ -3,10 +3,11 @@ import threading
 
 
 class Server:
-    def __init__(self, address, port, debug=False):
+    def __init__(self, address, port, name, debug=False):
         self.address   = str(address)
         self.port      = int(port)
         self.debug     = bool(debug)
+        self.name      = str(name)
         self.clients   = []
         self.addresses = []
         self.names     = []
@@ -45,7 +46,7 @@ class Server:
 
         while True:
             try:
-                client.send("[Internal] CLN_INPUT".encode("utf-8"))
+                client.sendall("[Internal] CLN_INPUT".encode("utf-8"))
                 message = client.recv(1024).decode("utf-8")
             except Exception as e:
                 if client in self.clients:
@@ -60,13 +61,13 @@ class Server:
 
 
     def ask_client(self, question, client):
-        client.send(question.encode("utf-8"))
+        client.sendall(question.encode("utf-8"))
         return client.recv(1024).decode("utf-8")
 
 
     def out(self, text):
         if self.debug:
             if "\n" not in text:
-                print(f"INFO: {text}")
+                print(f"[{self.name}] {text}")
             else:
                 print(text)

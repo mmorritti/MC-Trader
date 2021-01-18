@@ -1,7 +1,7 @@
 from backend.server_def import Server
 import threading
 import backend.commands as commands
-from backend.database import entities, stocks, market, Entity, Stock, cmd, dmm
+from backend.database import users, stocks, market, User, Stock, cmd, dmm
 
 
 class MainServer(Server):
@@ -9,19 +9,19 @@ class MainServer(Server):
         try:
             usr = self.ask_client("[Internal] NSE_CLN_NK", client)
             
-            if usr in entities.keys():
+            if usr in users.keys():
                 password = self.ask_client("[Internal] NSE_CLN_PW", client)
 
-                if password == entities[usr].password:
+                if password == users[usr].password:
                     self.clients.append(client)
-                    client.send("[Internal] CLN_JOINED".encode("utf-8"))
+                    client.sendall("[Internal] CLN_JOINED".encode("utf-8"))
 
                     self.out(f"{usr} joined with IP address {address} and password '{password}'")
                 else:
-                    client.send("[Internal] INVALID_PW_ERR".encode("utf-8"))
+                    client.sendall("[Internal] INVALID_PW_ERR".encode("utf-8"))
                     self.out(f"user {usr} tried to log in with password '{password}' but failed")
             else:
-                client.send("[Internal] IVALID_USR_ERR".encode("utf-8"))
+                client.sendall("[Internal] IVALID_USR_ERR".encode("utf-8"))
                 self.out(f"user {usr} tried to log in!")
 
             thread = threading.Thread(target=self.handle, args=(client, address, usr))
@@ -35,17 +35,18 @@ class MainServer(Server):
 
         while True:
             try:
-                client.send("[Internal] CLN_INPUT".encode("utf-8"))
+                client.sendall("[Internal] CLN_INPUT".encode("utf-8"))
                 message = client.recv(1024).decode("utf-8")
 
                 if message in cmd.keys():
+                    self.out(f"user {name} issued server command '{message}'")
+
                     try:
                         exec(compile(source=cmd[message], filename="command", mode="exec", optimize=1))
                     except Exception as e:
                         self.out(f"\n\nServer Raised Exception:\n\t{e}")
-                    self.out(f"user {name} issued server command '{message}'")
                 else:
-                    client.send("[Internal] INV_CMD_ERR".encode())
+                    client.sendall("[Internal] INV_CMD_ERR".encode())
             except Exception as e:
                 if client in self.clients:
                     self.clients.remove(client)
@@ -58,4 +59,4 @@ class MainServer(Server):
                 break
 
 
-MainServer("25.80.62.167", 1989, True)
+MainServer("25.80.62.167", 1989, "Main", True)

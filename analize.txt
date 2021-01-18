@@ -1,238 +1,713 @@
-('25.80.62.167', 55008) is now connected to the server
 
+C:\Users\OxyGe\Documents\UMSR SERVER>java -Xmx4080M -Xms4080M -jar server.jar nogui
+*** Warning, you've not updated in a while! ***
+*** Please download a new build as per instructions from https://papermc.io/downloads ***
+System Info: Java 1.8 (Java HotSpot(TM) 64-Bit Server VM 25.271-b09) Host: Windows 10 10.0 (amd64)
+Loading libraries, please wait...
+[12:04:59 INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[12:04:59 INFO]: Reloading ResourceManager: Default, bukkit, fast leaf decay v2.0.3, homes v1.4.0, multiplayer sleep v2.4.3, spawn v2.3.0, unlock all recipes v2.0.0, custom villager shops v1.2.0.zip
+[12:05:00 INFO]: Loaded 7 recipes
+[12:05:01 INFO]: Starting minecraft server version 1.16.4
+[12:05:01 INFO]: Loading properties
+[12:05:01 INFO]: This server is running Paper version git-Paper-296 (MC: 1.16.4) (Implementing API version 1.16.4-R0.1-SNAPSHOT)
+[12:05:01 INFO]: Server Ping Player Sample Count: 12
+[12:05:01 INFO]: Using 4 threads for Netty based IO
+[12:05:01 INFO]: Debug logging is disabled
+[12:05:01 WARN]: You specified a resource pack without providing a sha1 hash. Pack will be updated on the client only if you change the name of the pack.
+[12:05:01 INFO]: Default game type: SURVIVAL
+[12:05:01 INFO]: Generating keypair
+[12:05:01 INFO]: Starting Minecraft server on localhost:25565
+[12:05:01 INFO]: Using default channel type
+[12:05:02 WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[12:05:04 WARN]: Legacy plugin EasyWarp v3.8 does not specify an api-version.
+[12:05:04 WARN]: Legacy plugin ChestLocker v1.1 does not specify an api-version.
+[12:05:04 INFO]: [EpicRename] Loading EpicRename v3.7
+[12:05:04 INFO]: [UltimateRepairing] Loading UltimateRepairing v1.4.4
+[12:05:04 INFO]: [SkinsRestorer] Loading SkinsRestorer v13.8.6
+[12:05:04 INFO]: [WorldEdit] Loading WorldEdit v7.2.0-SNAPSHOT+b9e750f
+[12:05:04 INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@53009376]
+[12:05:04 INFO]: [EasyWarp] Loading EasyWarp v3.8
+[12:05:04 INFO]: [ChestLocker] Loading ChestLocker v1.1
+[12:05:04 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:05:04 INFO]: [WorldEdit] Enabling WorldEdit v7.2.0-SNAPSHOT+b9e750f
+[12:05:04 INFO]: WEPIF: Using the Bukkit Permissions API.
+[12:05:04 WARN]:
+**********************************************
+** This WorldEdit version does not fully support your version of Bukkit.
+**
+** When working with blocks or undoing, chests will be empty, signs
+** will be blank, and so on. There will be no support for User
+** and block property-related functions.
+**
+** Please see https://worldedit.enginehub.org/en/latest/faq/#bukkit-adapters
+**********************************************
 
-Server Raised Exception
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
-('25.80.62.167', 55017) is now connected to the server
-BBNK.NSE joined with IP address ('25.80.62.167', 55017) and password 'Central2030'
-user BBNK.NSE issued server command 'vendi'
-user BBNK.NSE issued server command 'vendi'
-user BBNK.NSE issued server command 'vendi'
-user BBNK.NSE issued server command 'vendi'
-user BBNK.NSE issued server command 'vendi'
-user BBNK.NSE issued server command 'vendi'
-user BBNK.NSE issued server command 'vendi'
-user BBNK.NSE issued server command 'compra'
-user BBNK.NSE issued server command 'borsa'
-for stock in db.stocks: db.stocks[stock].prec = db.stocks[stock].price
-user BBNK.NSE issued server command 'borsa'
-print(db.entities["NETHP.NSE"].portfolio)
-{'NETHP.NSE': 100000}
-('25.36.101.241', 53025) is now connected to the server
-AndrySpartan joined with IP address ('25.36.101.241', 53025) and password 'andry'
-('25.96.158.174', 56913) is now connected to the server
+[12:05:05 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[12:05:05 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[12:05:05 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[12:05:05 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[12:05:05 INFO]: Preparing level "world"
+[12:05:05 INFO]: -------- World Settings For [world] --------
+[12:05:05 INFO]: User Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[12:05:05 INFO]: Mob Spawn Range: 8
+[12:05:05 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[12:05:05 INFO]: Item Merge Radius: 2.5
+[12:05:05 INFO]: Item Despawn Rate: 6000
+[12:05:05 INFO]: View Distance: 16
+[12:05:05 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[12:05:05 INFO]: Experience Merge Radius: 3.0
+[12:05:05 INFO]: User Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[12:05:05 INFO]: Cactus Growth Modifier: 100%
+[12:05:05 INFO]: Cane Growth Modifier: 100%
+[12:05:05 INFO]: Melon Growth Modifier: 100%
+[12:05:05 INFO]: Mushroom Growth Modifier: 100%
+[12:05:05 INFO]: Pumpkin Growth Modifier: 100%
+[12:05:05 INFO]: Sapling Growth Modifier: 100%
+[12:05:05 INFO]: Beetroot Growth Modifier: 100%
+[12:05:05 INFO]: Carrot Growth Modifier: 100%
+[12:05:05 INFO]: Potato Growth Modifier: 100%
+[12:05:05 INFO]: Wheat Growth Modifier: 100%
+[12:05:05 INFO]: NetherWart Growth Modifier: 100%
+[12:05:05 INFO]: Vine Growth Modifier: 100%
+[12:05:05 INFO]: Cocoa Growth Modifier: 100%
+[12:05:05 INFO]: Bamboo Growth Modifier: 100%
+[12:05:05 INFO]: SweetBerry Growth Modifier: 100%
+[12:05:05 INFO]: Kelp Growth Modifier: 100%
+[12:05:05 INFO]: Tile Max Tick Time: 50ms User max Tick Time: 50ms
+[12:05:05 INFO]: Max TNT Explosions: 100
+[12:05:05 INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[12:05:05 INFO]: Nerfing mobs spawned from spawners: false
+[12:05:05 INFO]: Zombie Aggressive Towards Villager: true
+[12:05:05 INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[12:05:05 INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[12:05:05 INFO]: -------- World Settings For [world_nether] --------
+[12:05:05 INFO]: User Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[12:05:05 INFO]: Mob Spawn Range: 8
+[12:05:05 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[12:05:05 INFO]: Item Merge Radius: 2.5
+[12:05:05 INFO]: Item Despawn Rate: 6000
+[12:05:05 INFO]: View Distance: 16
+[12:05:05 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[12:05:05 INFO]: Experience Merge Radius: 3.0
+[12:05:05 INFO]: User Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[12:05:05 INFO]: Cactus Growth Modifier: 100%
+[12:05:05 INFO]: Cane Growth Modifier: 100%
+[12:05:05 INFO]: Melon Growth Modifier: 100%
+[12:05:05 INFO]: Mushroom Growth Modifier: 100%
+[12:05:05 INFO]: Pumpkin Growth Modifier: 100%
+[12:05:05 INFO]: Sapling Growth Modifier: 100%
+[12:05:05 INFO]: Beetroot Growth Modifier: 100%
+[12:05:05 INFO]: Carrot Growth Modifier: 100%
+[12:05:05 INFO]: Potato Growth Modifier: 100%
+[12:05:05 INFO]: Wheat Growth Modifier: 100%
+[12:05:05 INFO]: NetherWart Growth Modifier: 100%
+[12:05:05 INFO]: Vine Growth Modifier: 100%
+[12:05:05 INFO]: Cocoa Growth Modifier: 100%
+[12:05:05 INFO]: Bamboo Growth Modifier: 100%
+[12:05:05 INFO]: SweetBerry Growth Modifier: 100%
+[12:05:05 INFO]: Kelp Growth Modifier: 100%
+[12:05:05 INFO]: Tile Max Tick Time: 50ms User max Tick Time: 50ms
+[12:05:05 INFO]: Max TNT Explosions: 100
+[12:05:05 INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[12:05:05 INFO]: Nerfing mobs spawned from spawners: false
+[12:05:05 INFO]: Zombie Aggressive Towards Villager: true
+[12:05:05 INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[12:05:05 INFO]: -------- World Settings For [world_the_end] --------
+[12:05:05 INFO]: User Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[12:05:05 INFO]: Mob Spawn Range: 8
+[12:05:05 INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[12:05:05 INFO]: Item Merge Radius: 2.5
+[12:05:05 INFO]: Item Despawn Rate: 6000
+[12:05:05 INFO]: View Distance: 16
+[12:05:05 INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[12:05:05 INFO]: Experience Merge Radius: 3.0
+[12:05:05 INFO]: User Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true
+[12:05:05 INFO]: Cactus Growth Modifier: 100%
+[12:05:05 INFO]: Cane Growth Modifier: 100%
+[12:05:05 INFO]: Melon Growth Modifier: 100%
+[12:05:05 INFO]: Mushroom Growth Modifier: 100%
+[12:05:05 INFO]: Pumpkin Growth Modifier: 100%
+[12:05:05 INFO]: Sapling Growth Modifier: 100%
+[12:05:05 INFO]: Beetroot Growth Modifier: 100%
+[12:05:05 INFO]: Carrot Growth Modifier: 100%
+[12:05:05 INFO]: Potato Growth Modifier: 100%
+[12:05:05 INFO]: Wheat Growth Modifier: 100%
+[12:05:05 INFO]: NetherWart Growth Modifier: 100%
+[12:05:05 INFO]: Vine Growth Modifier: 100%
+[12:05:05 INFO]: Cocoa Growth Modifier: 100%
+[12:05:05 INFO]: Bamboo Growth Modifier: 100%
+[12:05:05 INFO]: SweetBerry Growth Modifier: 100%
+[12:05:05 INFO]: Kelp Growth Modifier: 100%
+[12:05:05 INFO]: Tile Max Tick Time: 50ms User max Tick Time: 50ms
+[12:05:05 INFO]: Max TNT Explosions: 100
+[12:05:05 INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[12:05:05 INFO]: Nerfing mobs spawned from spawners: false
+[12:05:05 INFO]: Zombie Aggressive Towards Villager: true
+[12:05:05 INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Bastion: 30084232 Fortress: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[12:05:05 INFO]: Preparing start region for dimension minecraft:overworld
+[12:05:05 INFO]: Loaded 0 spawn chunks for world world
+[12:05:05 INFO]: Preparing spawn area: 0%
+[12:05:05 INFO]: Preparing spawn area: 45%
+[12:05:06 INFO]: Time elapsed: 579 ms
+[12:05:06 INFO]: Preparing start region for dimension minecraft:the_nether
+[12:05:06 INFO]: Loaded 0 spawn chunks for world world_nether
+[12:05:06 INFO]: Time elapsed: 48 ms
+[12:05:06 INFO]: Preparing start region for dimension minecraft:the_end
+[12:05:06 INFO]: Loaded 0 spawn chunks for world world_the_end
+[12:05:06 INFO]: Time elapsed: 44 ms
+[12:05:06 INFO]: [EpicRename] Enabling EpicRename v3.7
+[12:05:06 INFO]: [EpicRename] [Main#checkServerVersion()] Server running unknown version. Assuming newer than 1.13
+[12:05:06 INFO]: [EpicRename] Version: 3.7 MC Version: NEWER_THAN_ONE_DOT_EIGHT
+[12:05:06 INFO]: [EpicRename] This plugin is Copyright (c) 2020 Justin "JustBru00" Brubaker. This plugin is licensed under the MPL v2.0. You can view a copy of it at: http://bit.ly/2eMknxx
+[12:05:06 INFO]: [EpicRename] Starting to enable plugin...
+[12:05:06 INFO]: [EpicRename] Vault not found! If you would like to use economy features download Vault at: http://dev.bukkit.org/bukkit-plugins/vault/
+[12:05:06 INFO]: [EpicRename] Disabling support for economy features.
+[12:05:06 INFO]: [EpicRename] Prefix set to: '[EpicRename] '
+[12:05:06 INFO]: [EpicRename] Plugin Enabled!
+[12:05:06 INFO]: [UltimateRepairing] Enabling UltimateRepairing v1.4.4
+[12:05:06 INFO]:
+[12:05:06 INFO]: =============================
+[12:05:06 INFO]: UltimateRepairing 1.4.4 by Songoda <3!
+[12:05:06 INFO]: Action: Enabling...
+[12:05:06 INFO]: [UltimateRepairing] Loaded locale "en_US"
+[12:05:06 INFO]: [SongodaCore] Hooked UltimateRepairing.
+[12:05:06 INFO]: =============================
+[12:05:06 INFO]:
+[12:05:06 INFO]: [SkinsRestorer] Enabling SkinsRestorer v13.8.6
+[12:05:06 INFO]: [SkinsRestorer] Using PaperSkinRefresher
+[12:05:06 INFO]: [SkinsRestorer] Detected Minecraft v1_16_R3, using UniversalSkinFactory.
+[12:05:06 INFO]: [SkinsRestorer] SkinErrorCooldown is missing in config.yml! Using default value.
+[12:05:06 INFO]: [SkinsRestorer] CustomGUI.Enabled is missing in config.yml! Using default value.
+[12:05:06 INFO]: [SkinsRestorer] CustomGUI.ShowOnlyCustomGUI is missing in config.yml! Using default value.
+[12:05:06 INFO]: [SkinsRestorer] DisablePrefix is missing in config.yml! Using default value.
+[12:05:06 INFO]: [SkinsRestorer] MySQL.ConnectionOptions is missing in config.yml! Using default value.
+[12:05:06 INFO]: [SkinsRestorer] DismountPlayerOnSkinUpdate is missing in config.yml! Using default value.
+[12:05:06 INFO]: [SkinsRestorer] RemountPlayerOnSkinUpdate is missing in config.yml! Using default value.
+[12:05:06 INFO]: [SkinsRestorer] DismountPassengersOnSkinUpdate is missing in config.yml! Using default value.
+[12:05:06 INFO]: [SkinsRestorer] Debug is missing in config.yml! Using default value.
+[12:05:06 INFO]: [SkinsRestorer] [ACF] Enabled Asynchronous Tab Completion Support!
+[12:05:08 INFO]: [EasyWarp] Enabling EasyWarp v3.8*
+[12:05:08 INFO]: [ChestLocker] Enabling ChestLocker v1.1*
+[12:05:08 INFO]: Running delayed init tasks
+[12:05:08 INFO]: Done (7.435s)! For help, type "help"
+[12:05:08 INFO]: Timings Reset
+[12:05:08 INFO]: [SkinsRestorer] ----------------------------------------------
+[12:05:08 INFO]: [SkinsRestorer]     +===============+
+[12:05:08 INFO]: [SkinsRestorer]     | SkinsRestorer |
+[12:05:08 INFO]: [SkinsRestorer]     |---------------|
+[12:05:08 INFO]: [SkinsRestorer]     |   Bukkit only |
+[12:05:08 INFO]: [SkinsRestorer]     +===============+
+[12:05:08 INFO]: [SkinsRestorer] ----------------------------------------------
+[12:05:08 INFO]: [SkinsRestorer]     Current version: 13.8.6
+[12:05:08 INFO]: [SkinsRestorer]     This is the latest version!
+[12:05:08 INFO]: [SkinsRestorer] ----------------------------------------------
+[12:10:32 INFO]: UUID of player XfanX46 is b873cce6-d232-3e19-90cd-da2e3741d5a5
+[12:10:32 INFO]: XfanX46 [NGP.nse] joined the game
+[12:10:32 INFO]: XfanX46[/25.63.232.9:52483] logged in with User id 2128 at ([world]137.01232747284683, 90.4027426254827, -2565.040114951672)
+[12:12:16 WARN]: Can't keep up! Is the server overloaded? Running 5024ms or 100 ticks behind
+[12:12:33 INFO]: UUID of player tzyvoski is 14abc9ad-25b5-3a84-af9e-f4bdd5601f63
+[12:12:33 INFO]: tzyvoski [ABET.nse] joined the game
+[12:12:33 INFO]: tzyvoski[/localhost:52943] logged in with User id 2889 at ([world]3424346.547420331, 66.0, 4232223.028816811)
+[12:12:56 INFO]: tzyvoski issued server command: /trigger spawn
+[12:12:56 INFO]: [tzyvoski [ABET.nse]: Triggered [Spawn]]
+[12:13:01 INFO]: tzyvoski issued server command: /gamemode survival
+[12:13:01 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[12:13:22 INFO]: UUID of player Guggi17 is 9a48d436-2f8e-3582-90e4-412906ae4a64
+[12:13:22 INFO]: Guggi17 joined the game
+[12:13:22 INFO]: Guggi17[/25.85.89.219:63762] logged in with User id 3897 at ([world_nether]8060.673222882319, 256.0, 252.57493286986949)
+[12:13:34 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:13:34 INFO]: Guggi17 fell out of the world
+[12:13:34 INFO]: [Guggi17: Killed Guggi17]
+[12:13:45 INFO]: XfanX46 issued server command: /gamemode survival
+[12:13:45 INFO]: [XfanX46 [NGP.nse]: Set own game mode to Survival Mode]
+[12:14:26 INFO]: tzyvoski issued server command: /tp XfanX46
+[12:14:26 INFO]: [tzyvoski [ABET.nse]: Teleported tzyvoski [ABET.nse] to XfanX46 [NGP.nse]]
+[12:14:37 INFO]: Guggi17 issued server command: /teleport Guggi17 -6140 72 2160
+[12:14:37 INFO]: [Guggi17: Teleported Guggi17 to -6139.5, 72.0, 2160.5]
+[12:14:50 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:14:50 INFO]: Guggi17 fell out of the world
+[12:14:50 INFO]: [Guggi17: Killed Guggi17]
+[12:16:31 INFO]: Guggi17 issued server command: /teleport Guggi17 XfanX46
+[12:16:31 INFO]: [Guggi17: Teleported Guggi17 to XfanX46 [NGP.nse]]
+[12:19:14 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:19:14 INFO]: Guggi17 fell out of the world
+[12:19:14 INFO]: [Guggi17: Killed Guggi17]
+[12:19:31 INFO]: Guggi17 issued server command: /teleport Guggi17 -6140 72 2160
+[12:19:31 INFO]: [Guggi17: Teleported Guggi17 to -6139.5, 72.0, 2160.5]
+[12:19:48 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:19:48 INFO]: Guggi17 fell out of the world
+[12:19:48 INFO]: [Guggi17: Killed Guggi17]
+[12:20:06 INFO]: Guggi17 issued server command: /teleport Guggi17 -6140 72 2160
+[12:20:06 INFO]: [Guggi17: Teleported Guggi17 to -6139.5, 72.0, 2160.5]
+[12:20:22 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:20:22 INFO]: Guggi17 fell out of the world
+[12:20:22 INFO]: [Guggi17: Killed Guggi17]
+[12:21:04 INFO]: XfanX46 issued server command: /trigger spawn
+[12:21:04 INFO]: [XfanX46 [NGP.nse]: Triggered [Spawn]]
+[12:24:34 INFO]: Guggi17 fell from a high place
+[12:25:08 INFO]: XfanX46 issued server command: /trigger spawn
+[12:25:08 INFO]: [XfanX46 [NGP.nse]: Triggered [Spawn]]
+[12:25:16 INFO]: tzyvoski issued server command: /tp XfanX46
+[12:25:16 INFO]: [tzyvoski [ABET.nse]: Teleported tzyvoski [ABET.nse] to XfanX46 [NGP.nse]]
+[12:25:16 WARN]: tzyvoski moved too quickly! 380.40406801706035,0.0,-322.65800527859165
+[12:25:24 INFO]: Guggi17 issued server command: /teleport Guggi17 XfanX46
+[12:25:24 INFO]: [Guggi17: Teleported Guggi17 to XfanX46 [NGP.nse]]
+[12:25:33 INFO]: tzyvoski issued server command: /tp XfanX46
+[12:25:33 INFO]: [tzyvoski [ABET.nse]: Teleported tzyvoski [ABET.nse] to XfanX46 [NGP.nse]]
+[12:25:33 WARN]: tzyvoski moved too quickly! 4.116564797330568,15.0,-5.056013472563791
+[12:29:08 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:29:08 INFO]: Guggi17 fell out of the world
+[12:29:08 INFO]: [Guggi17: Killed Guggi17]
+[12:29:24 INFO]: tzyvoski issued server command: /gamemode spectator
+[12:29:24 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Spectator Mode]
+[12:29:29 INFO]: Guggi17 issued server command: //calculate 44*250000
+[12:29:41 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:29:41 INFO]: Guggi17 fell out of the world
+[12:29:41 INFO]: [Guggi17: Killed Guggi17]
+[12:29:44 INFO]: Guggi17 issued server command: /teleport Guggi17 XfanX46
+[12:29:44 INFO]: [Guggi17: Teleported Guggi17 to XfanX46 [NGP.nse]]
+[12:30:07 INFO]: XfanX46 issued server command: /tp tzyvoski
+[12:30:07 INFO]: [XfanX46 [NGP.nse]: Teleported XfanX46 [NGP.nse] to tzyvoski [ABET.nse]]
+[12:30:11 INFO]: tzyvoski issued server command: /gamemode creative
+[12:30:11 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Creative Mode]
+[12:34:47 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:34:47 INFO]: Guggi17 fell out of the world
+[12:34:47 INFO]: [Guggi17: Killed Guggi17]
+[12:36:42 INFO]: XfanX46 issued server command: /trigger spawn
+[12:36:42 INFO]: [XfanX46 [NGP.nse]: Triggered [Spawn]]
+[12:36:49 INFO]: Guggi17 issued server command: /teleport Guggi17 XfanX46
+[12:36:49 INFO]: [Guggi17: Teleported Guggi17 to XfanX46 [NGP.nse]]
+[12:36:55 INFO]: tzyvoski issued server command: /tp XfanX46
+[12:36:55 INFO]: [tzyvoski [ABET.nse]: Teleported tzyvoski [ABET.nse] to XfanX46 [NGP.nse]]
+[12:37:47 INFO]: Guggi17 issued server command: /teleport Guggi17 XfanX46
+[12:37:47 INFO]: [Guggi17: Teleported Guggi17 to XfanX46 [NGP.nse]]
+[12:38:26 INFO]: tzyvoski issued server command: /tp XfanX46
+[12:38:26 INFO]: [tzyvoski [ABET.nse]: Teleported tzyvoski [ABET.nse] to XfanX46 [NGP.nse]]
+[12:38:26 WARN]: tzyvoski moved too quickly! 49.759719459960394,-44.9076022079868,44.97170088941444
+[12:39:30 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:39:30 INFO]: Guggi17 fell out of the world
+[12:39:30 INFO]: [Guggi17: Killed Guggi17]
+[12:39:42 INFO]: XfanX46 issued server command: /tp tzyvoski
+[12:39:42 INFO]: [XfanX46 [NGP.nse]: Teleported XfanX46 [NGP.nse] to tzyvoski [ABET.nse]]
+[12:41:55 INFO]: Guggi17 issued server command: /teleport Guggi17 XfanX46
+[12:41:55 INFO]: [Guggi17: Teleported Guggi17 to XfanX46 [NGP.nse]]
+[12:42:09 INFO]: Guggi17 issued server command: /gamemode creative
+[12:42:09 INFO]: [Guggi17: Set own game mode to Creative Mode]
+[12:42:59 WARN]: Block User invalid: minecraft:mob_spawner @ BlockPosition{x=-437, y=9, z=217}
+[12:43:13 INFO]: Guggi17 issued server command: /gamemode survival
+[12:43:13 INFO]: [Guggi17: Set own game mode to Survival Mode]
+[12:45:08 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:45:08 INFO]: Guggi17 fell out of the world
+[12:45:08 INFO]: [Guggi17: Killed Guggi17]
+[12:45:55 INFO]: Guggi17 issued server command: /teleport Guggi17 -6140 72 2160
+[12:45:55 INFO]: [Guggi17: Teleported Guggi17 to -6139.5, 72.0, 2160.5]
+[12:46:07 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:46:07 INFO]: Guggi17 fell out of the world
+[12:46:07 INFO]: [Guggi17: Killed Guggi17]
+[12:48:14 INFO]: XfanX46 issued server command: /tp Guggi17
+[12:48:14 INFO]: [XfanX46 [NGP.nse]: Teleported XfanX46 [NGP.nse] to Guggi17]
+[12:49:11 INFO]: tzyvoski issued server command: /tp XfanX46
+[12:49:11 INFO]: [tzyvoski [ABET.nse]: Teleported tzyvoski [ABET.nse] to XfanX46 [NGP.nse]]
+[12:50:52 INFO]: Guggi17 issued server command: /warp Guggi17 guggismistamento
+[12:51:26 INFO]: Guggi17 issued server command: /kill Guggi17
+[12:51:26 INFO]: Guggi17 fell out of the world
+[12:51:26 INFO]: [Guggi17: Killed Guggi17]
+[12:51:59 INFO]: tzyvoski issued server command: /tp XfanX46
+[12:51:59 INFO]: [tzyvoski [ABET.nse]: Teleported tzyvoski [ABET.nse] to XfanX46 [NGP.nse]]
+[12:51:59 WARN]: tzyvoski moved too quickly! -67.89523146247315,-12.878703159460798,-173.92554493702193
+[12:52:08 INFO]: XfanX46 issued server command: /gamemode survival
+[12:52:13 INFO]: XfanX46 issued server command: /gamemode creative
+[12:52:13 INFO]: [XfanX46 [NGP.nse]: Set own game mode to Creative Mode]
+[12:54:12 INFO]: XfanX46 issued server command: /gamemode survival
+[12:54:12 INFO]: [XfanX46 [NGP.nse]: Set own game mode to Survival Mode]
+[12:54:16 INFO]: tzyvoski issued server command: /gamemode survival
+[12:54:16 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[12:57:11 WARN]: XfanX46 moved wrongly!
+[12:57:51 INFO]: XfanX46 lost connection: Disconnected
+[12:57:51 INFO]: XfanX46 left the game
+[12:58:15 INFO]: tzyvoski issued server command: /tp Guggi17
+[12:58:15 INFO]: [tzyvoski [ABET.nse]: Teleported tzyvoski [ABET.nse] to Guggi17]
+[12:58:15 WARN]: tzyvoski moved too quickly! -156.0686690748058,-6.4375,273.31266221212326
+[12:58:23 INFO]: tzyvoski issued server command: /trigger spawn
+[12:58:23 INFO]: [tzyvoski [ABET.nse]: Triggered [Spawn]]
+[12:58:47 INFO]: UUID of player XfanX46 is b873cce6-d232-3e19-90cd-da2e3741d5a5
+[12:58:47 INFO]: XfanX46 [NGP.nse] joined the game
+[12:58:47 INFO]: XfanX46[/25.63.232.9:53110] logged in with User id 28928 at ([world]263.5740411816278, 69.0, 39.51249998807907)
+[12:59:01 INFO]: XfanX46 lost connection: Disconnected
+[12:59:01 INFO]: XfanX46 left the game
+[12:59:47 INFO]: UUID of player XfanX46 is b873cce6-d232-3e19-90cd-da2e3741d5a5
+[12:59:47 INFO]: XfanX46 [NGP.nse] joined the game
+[12:59:48 INFO]: XfanX46[/25.63.232.9:53301] logged in with User id 29297 at ([world]265.5004449233659, 69.0, 39.99609802110317)
+[13:00:49 INFO]: tzyvoski issued server command: /tp XfanX46
+[13:00:49 INFO]: [tzyvoski [ABET.nse]: Teleported tzyvoski [ABET.nse] to XfanX46 [NGP.nse]]
+[13:00:49 WARN]: tzyvoski moved too quickly! 17.964479013002205,5.0,41.69061692367521
+[13:01:05 INFO]: tzyvoski issued server command: /setblock 268 68 73 air
+[13:01:05 INFO]: [tzyvoski [ABET.nse]: Changed the block at 268, 68, 73]
+[13:01:07 INFO]: tzyvoski issued server command: /gamemode creative
+[13:01:07 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Creative Mode]
+[13:01:16 INFO]: XfanX46 issued server command: /gamemode creative
+[13:01:16 INFO]: [XfanX46 [NGP.nse]: Set own game mode to Creative Mode]
+[13:01:35 INFO]: Villager UserVillager['Nitwit'/75, uuid='a4e8529b-71ec-4cca-aa81-ec165112d20c', l='ServerLevel[world]', x=268.50, y=68.88, z=71.50, cx=16, cz=4, tl=37991398, v=true, d=false] died, message: 'Nitwit was slain by tzyvoski [ABET.nse] using [Tzyvoski's Sword]'
+[13:01:43 INFO]: Villager UserVillager['Nitwit'/76, uuid='8cc590eb-ad3f-4a41-8d22-a0aedb27a778', l='ServerLevel[world]', x=268.50, y=68.88, z=75.50, cx=16, cz=4, tl=24904434, v=true, d=false] died, message: 'Nitwit was slain by tzyvoski [ABET.nse] using [Tzyvoski's Sword]'
+[13:02:44 INFO]: tzyvoski issued server command: /rename Conversione Smeraldi
+[13:02:44 INFO]: [EpicRename] The player tzyvoski just renamed an item to: "Conversione Smeraldi".
+[13:03:18 INFO]: tzyvoski issued server command: /setblock 268 68 49 air
+[13:03:18 INFO]: [tzyvoski [ABET.nse]: Changed the block at 268, 68, 49]
+[13:04:10 INFO]: Villager UserVillager['Conversione Smeraldi'/30545, uuid='711d1ab4-db5d-41a3-a529-a4b8770359cd', l='ServerLevel[world]', x=268.50, y=68.88, z=47.50, cx=16, cz=2, tl=790, v=true, d=false] died, message: 'Conversione Smeraldi was slain by XfanX46 [NGP.nse]'
+[13:05:11 INFO]: tzyvoski issued server command: /tp XfanX46
+[13:05:11 INFO]: [tzyvoski [ABET.nse]: Teleported tzyvoski [ABET.nse] to XfanX46 [NGP.nse]]
+[13:05:11 WARN]: tzyvoski moved too quickly! -3.537309783437024,7.543399891949051,16.715243753629316
+[13:06:49 INFO]: tzyvoski issued server command: /rename $250,000
+[13:06:49 INFO]: [EpicRename] The player tzyvoski just renamed an item to: "$250,000".
+[13:07:43 INFO]: XfanX46 issued server command: //calculate 750 * 7
+[13:07:46 INFO]: tzyvoski issued server command: //calc 150 * 7
+[13:07:54 INFO]: XfanX46 issued server command: //calculate 150 * 7
+[13:08:30 INFO]: Guggi17 issued server command: /teleport Guggi17 -6140 72 2160
+[13:08:30 INFO]: [Guggi17: Teleported Guggi17 to -6139.5, 72.0, 2160.5]
+[13:08:43 INFO]: Guggi17 issued server command: /kill Guggi17
+[13:08:43 INFO]: Guggi17 fell out of the world
+[13:08:43 INFO]: [Guggi17: Killed Guggi17]
+[13:13:24 INFO]: tzyvoski issued server command: /tp XfanX46
+[13:13:24 INFO]: [tzyvoski [ABET.nse]: Teleported tzyvoski [ABET.nse] to XfanX46 [NGP.nse]]
+[13:13:24 WARN]: tzyvoski moved too quickly! -3.430548584015071,-6.0625,-22.00536847916139
+[13:13:55 INFO]: Guggi17 issued server command: /warp Guggi17 GuggiIron
+[13:14:21 INFO]: Guggi17 issued server command: /kill Guggi17
+[13:14:21 INFO]: Guggi17 fell out of the world
+[13:14:21 INFO]: [Guggi17: Killed Guggi17]
+[13:17:41 INFO]: XfanX46 lost connection: Disconnected
+[13:17:41 INFO]: XfanX46 left the game
+[13:17:49 INFO]: UUID of player XfanX46 is b873cce6-d232-3e19-90cd-da2e3741d5a5
+[13:17:49 INFO]: XfanX46 [NGP.nse] joined the game
+[13:17:49 INFO]: XfanX46[/25.63.232.9:53369] logged in with User id 36358 at ([world]267.04278762035045, 69.0, 45.36133455678094)
+[13:17:56 INFO]: tzyvoski issued server command: /rename Acquisti -> Prezzi Fissi
+[13:17:56 INFO]: [EpicRename] The player tzyvoski just renamed an item to: "Acquisti -> Prezzi Fissi".
+[13:19:06 INFO]: XfanX46 issued server command: /gamemode survival
+[13:19:06 INFO]: [XfanX46 [NGP.nse]: Set own game mode to Survival Mode]
+[13:19:28 INFO]: tzyvoski issued server command: /gamemode survival
+[13:19:28 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[13:19:53 INFO]: XfanX46 issued server command: /gamemode creative
+[13:19:53 INFO]: [XfanX46 [NGP.nse]: Set own game mode to Creative Mode]
+[13:19:53 INFO]: tzyvoski issued server command: /gamemode creative
+[13:19:53 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Creative Mode]
+[13:20:00 INFO]: tzyvoski issued server command: /gamemode survival
+[13:20:00 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[13:20:10 INFO]: XfanX46 issued server command: /gamemode survival
+[13:20:10 INFO]: [XfanX46 [NGP.nse]: Set own game mode to Survival Mode]
+[13:21:09 INFO]: Guggi17 issued server command: /warp Guggi17 GuggiNetherFarm
+[13:28:12 INFO]: tzyvoski issued server command: /gamemode creative
+[13:28:12 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Creative Mode]
+[13:28:45 INFO]: XfanX46 issued server command: /gamemode creative
+[13:28:45 INFO]: [XfanX46 [NGP.nse]: Set own game mode to Creative Mode]
+[13:29:51 INFO]: XfanX46 issued server command: //hcyl spruce_leaves 30 3
+[13:30:09 INFO]: XfanX46 issued server command: //hcyl spruce_leaves 37 3
+[13:30:28 INFO]: XfanX46 issued server command: //undo
+[13:30:31 INFO]: XfanX46 issued server command: //undo
+[13:30:47 INFO]: XfanX46 lost connection: Disconnected
+[13:30:47 INFO]: XfanX46 left the game
+[13:31:46 INFO]: tzyvoski issued server command: /gamemode spectator
+[13:31:46 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Spectator Mode]
+[13:31:50 INFO]: tzyvoski issued server command: //pso1
+[13:31:51 INFO]: tzyvoski issued server command: //pos1
+[13:32:01 INFO]: tzyvoski issued server command: //pos2
+[13:32:07 INFO]: tzyvoski issued server command: //replace spruce_leaves air
+[13:32:15 INFO]: tzyvoski issued server command: //undo
+[13:32:17 INFO]: tzyvoski issued server command: //redo
+[13:32:19 INFO]: tzyvoski issued server command: /gamemode survival
+[13:32:19 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[13:32:27 INFO]: tzyvoski issued server command: /time set day
+[13:32:27 INFO]: [tzyvoski [ABET.nse]: Set the time to 1000]
+[13:41:02 INFO]: tzyvoski lost connection: Disconnected
+[13:41:02 INFO]: tzyvoski left the game
+[15:06:00 INFO]: Guggi17 issued server command: /kill Guggi17
+[15:06:00 INFO]: Guggi17 fell out of the world
+[15:06:00 INFO]: [Guggi17: Killed Guggi17]
+[15:07:35 INFO]: Guggi17 issued server command: /warp Guggi17 GuggiNetherFarm
+[15:18:37 INFO]: UUID of player GocK19 is 42f518b8-5755-314d-b2c7-464f03fff895
+[15:18:37 INFO]: GocK19 joined the game
+[15:18:37 INFO]: GocK19[/25.73.139.57:54656] logged in with User id 65659 at ([world]86.630324263367, 85.0, -2472.5796486893387)
+[15:18:59 INFO]: Guggi17 issued server command: /warp Guggi17 guggismistamento
+[15:19:12 INFO]: GocK19 issued server command: /time set day
+[15:19:12 INFO]: [GocK19: Set the time to 1000]
+[15:20:46 INFO]: Guggi17 issued server command: /kill Guggi17
+[15:20:46 INFO]: Guggi17 fell out of the world
+[15:20:46 INFO]: [Guggi17: Killed Guggi17]
+[15:21:56 INFO]: Guggi17 issued server command: //calculate 60-29
+[15:40:02 INFO]: GocK19 issued server command: /kill @e
+[15:40:02 INFO]: Villager UserVillager['$1'/77, uuid='df369ed7-66b9-4d41-9ca0-b31d93d3937f', l='ServerLevel[world]', x=282.50, y=68.88, z=75.50, cx=17, cz=4, tl=44921150, v=true, d=false] died, message: '$1 fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['$10'/78, uuid='9a8f2f84-ee8f-4a4b-95bd-ab25204d544f', l='ServerLevel[world]', x=280.50, y=68.88, z=75.50, cx=17, cz=4, tl=44921135, v=true, d=false] died, message: '$10 fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['$50'/79, uuid='2c99a276-0b6b-4a9e-9dc9-33c44f85080d', l='ServerLevel[world]', x=278.50, y=68.88, z=75.50, cx=17, cz=4, tl=44921119, v=true, d=false] died, message: '$50 fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['$100'/80, uuid='2ee2f336-c710-4f76-b73b-d39f1219896c', l='ServerLevel[world]', x=276.50, y=68.88, z=75.50, cx=17, cz=4, tl=44911883, v=true, d=false] died, message: '$100 fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['$1,000'/81, uuid='ac5d9afe-8f5f-4b18-b614-482d883a8f77', l='ServerLevel[world]', x=274.50, y=68.88, z=75.50, cx=17, cz=4, tl=44901661, v=true, d=false] died, message: '$1,000 fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['$2,000'/82, uuid='479e838f-bbc2-4be4-84b7-e0092a725f54', l='ServerLevel[world]', x=272.50, y=68.88, z=75.50, cx=17, cz=4, tl=44890554, v=true, d=false] died, message: '$2,000 fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['$5,000'/83, uuid='c0226fc5-7881-4a61-9b1b-a9231a5734ac', l='ServerLevel[world]', x=272.50, y=68.88, z=73.50, cx=17, cz=4, tl=44879933, v=true, d=false] died, message: '$5,000 fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['$10,000'/84, uuid='2f5bb3a0-5df0-4cb1-853a-504ff12c2486', l='ServerLevel[world]', x=272.50, y=68.88, z=71.50, cx=17, cz=4, tl=44866675, v=true, d=false] died, message: '$10,000 fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['$50,000'/85, uuid='b1ffc773-717a-4cbf-8a49-ad8ba283cb26', l='ServerLevel[world]', x=272.50, y=68.88, z=69.50, cx=17, cz=4, tl=44866633, v=true, d=false] died, message: '$50,000 fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['$100,000'/86, uuid='207f3550-afa4-4b50-8434-ee04349479f5', l='ServerLevel[world]', x=272.50, y=68.88, z=67.50, cx=17, cz=4, tl=29461655, v=true, d=false] died, message: '$100,000 fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['$250,000'/87, uuid='d6a5db78-b6f2-438e-b32e-d511e7f393ec', l='ServerLevel[world]', x=272.50, y=68.88, z=65.50, cx=17, cz=4, tl=25150180, v=true, d=false] died, message: '$250,000 fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['Villager'/133, uuid='4511f271-b951-47bd-a799-010d0dfa19e3', l='ServerLevel[world]', x=-2437.17, y=84.56, z=242.38, cx=-153, cz=15, tl=46097741, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['Villager'/134, uuid='732dc217-eac3-4a1d-9c4a-660cf70f5cad', l='ServerLevel[world]', x=-2433.42, y=84.56, z=246.52, cx=-153, cz=15, tl=46097663, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['Villager'/136, uuid='470a5280-610a-45fe-b4b9-4cbfd063e058', l='ServerLevel[world]', x=-2431.14, y=84.56, z=242.70, cx=-152, cz=15, tl=46095516, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['Villager'/162, uuid='52b7a1c2-856e-42e2-b5d5-81e4ffe86226', l='ServerLevel[world]', x=-2667.51, y=85.56, z=-5582.40, cx=-167, cz=-349, tl=45543072, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['Villager'/165, uuid='57baa35f-fb2a-409c-a4cd-74a4fe66da26', l='ServerLevel[world]', x=-2667.57, y=85.00, z=-5586.37, cx=-167, cz=-350, tl=25075048, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['Villager'/166, uuid='6a61a61c-fdc5-493e-82b2-55a4c4cd4a2c', l='ServerLevel[world]', x=-2670.73, y=85.56, z=-5584.39, cx=-167, cz=-350, tl=25075027, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['Farmer'/214, uuid='f8b4281f-e1ab-4331-9684-af9e086a5c47', l='ServerLevel[world]', x=-126.50, y=79.51, z=98.50, cx=-8, cz=6, tl=49498233, v=true, d=false] died, message: 'Farmer fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['Villager'/217, uuid='916c37cd-23cc-4772-b50b-9a3c07ef3c9d', l='ServerLevel[world]', x=-114.70, y=79.00, z=97.30, cx=-8, cz=6, tl=42643082, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['Farmer'/218, uuid='9e2f84fc-a9c1-40c1-aafe-036a07cf2247', l='ServerLevel[world]', x=-114.30, y=79.00, z=97.70, cx=-8, cz=6, tl=42642988, v=true, d=false] died, message: 'Farmer fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['Villager'/219, uuid='ac7a986b-9b11-49b2-b28b-c4a283a387c2', l='ServerLevel[world]', x=-115.41, y=79.00, z=99.41, cx=-8, cz=6, tl=42643018, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:02 INFO]: Villager UserVillager['Butcher'/220, uuid='ab82441e-0483-4651-a033-e89559c049fc', l='ServerLevel[world]', x=-125.50, y=79.56, z=97.50, cx=-8, cz=6, tl=49498205, v=true, d=false] died, message: 'Butcher fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/221, uuid='cb07bf40-6759-4ae8-b1f5-a5fb31b59242', l='ServerLevel[world]', x=-126.50, y=79.51, z=98.50, cx=-8, cz=6, tl=49498184, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['.'/355, uuid='b442f257-b395-4815-a626-e4dac5e6294e', l='ServerLevel[world]', x=429.55, y=19.00, z=-2842.24, cx=26, cz=-178, tl=28458842, v=true, d=false] died, message: '. fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/514, uuid='3e027b19-986b-4872-a14f-ac2b12e53dd2', l='ServerLevel[world]', x=-5435.59, y=98.00, z=-52693.49, cx=-340, cz=-3294, tl=21726697, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/515, uuid='301e9b03-192b-438d-a9b1-c4030d9e1751', l='ServerLevel[world]', x=-5437.54, y=98.00, z=-52691.70, cx=-340, cz=-3294, tl=21726678, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/516, uuid='031feeb0-915b-44b3-8ef2-4bc3f98fd874', l='ServerLevel[world]', x=-5435.56, y=98.56, z=-52687.52, cx=-340, cz=-3293, tl=21726443, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/519, uuid='3bd11396-89c3-4d51-8ccd-b26d6d48e2a2', l='ServerLevel[world]', x=71876.52, y=99.33, z=1508.44, cx=4492, cz=94, tl=45571990, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/520, uuid='d68a8f81-121b-4df4-a7df-0cb61edd30a6', l='ServerLevel[world]', x=71872.92, y=99.56, z=1510.50, cx=4492, cz=94, tl=45571832, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/521, uuid='7c8e22f7-ebe4-4b22-816c-8ebe12486830', l='ServerLevel[world]', x=71876.58, y=99.75, z=1512.77, cx=4492, cz=94, tl=45571725, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/845, uuid='2f138451-8979-46f2-b35b-0443be18c109', l='ServerLevel[world]', x=-5586.21, y=106.56, z=-52795.52, cx=-350, cz=-3300, tl=21669269, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/846, uuid='fd4c4c45-2578-4e63-b9e3-07037f70628a', l='ServerLevel[world]', x=-5582.40, y=106.56, z=-52798.30, cx=-349, cz=-3300, tl=21669773, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/848, uuid='3645a782-13e5-4779-bdcd-c06a69a41d17', l='ServerLevel[world]', x=-5582.31, y=106.56, z=-52792.43, cx=-349, cz=-3300, tl=21669710, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Nitwit'/850, uuid='ddfe5344-fcda-401b-99ef-75cf38d260bc', l='ServerLevel[world]', x=12590.50, y=68.88, z=125212.50, cx=786, cz=7825, tl=20663435, v=true, d=false] died, message: 'Nitwit fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Nitwit'/851, uuid='f834706f-0713-4154-b8b5-a7d983ce5674', l='ServerLevel[world]', x=12590.50, y=68.88, z=125203.50, cx=786, cz=7825, tl=20662092, v=true, d=false] died, message: 'Nitwit fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/853, uuid='7a1b02ad-fafb-4226-8054-1926fe87928d', l='ServerLevel[world]', x=71487.52, y=90.56, z=1638.28, cx=4467, cz=102, tl=47545747, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/854, uuid='2a003049-e38b-4177-befb-e5cfdbed91a2', l='ServerLevel[world]', x=71485.44, y=90.00, z=1640.61, cx=4467, cz=102, tl=47545254, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/855, uuid='6bbe293a-0e33-43b1-bdc2-8b4b7b3c020c', l='ServerLevel[world]', x=71487.37, y=90.56, z=1642.73, cx=4467, cz=102, tl=47545216, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Nitwit'/858, uuid='3b4d0059-a956-4d1e-91f4-dc3009410ea5', l='ServerLevel[world]', x=-5547.50, y=68.88, z=-52811.50, cx=-347, cz=-3301, tl=21503082, v=true, d=false] died, message: 'Nitwit fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/863, uuid='98b35055-e3db-4185-af64-ec0d0776e760', l='ServerLevel[world]', x=-2209.50, y=85.10, z=-5703.51, cx=-139, cz=-357, tl=41017434, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/864, uuid='c1e00758-981c-423e-82ea-3199669924f8', l='ServerLevel[world]', x=-2211.34, y=85.00, z=-5701.48, cx=-139, cz=-357, tl=41017419, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/865, uuid='b43c7b06-ec5f-4243-ac48-e2e161bb4e06', l='ServerLevel[world]', x=-2209.50, y=85.56, z=-5697.53, cx=-139, cz=-357, tl=41017392, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/866, uuid='208acba2-30de-465a-9a2b-8438f848bee6', l='ServerLevel[world]', x=-2353.62, y=62.60, z=-5610.55, cx=-148, cz=-351, tl=41020921, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/867, uuid='0d9c41cc-a129-4513-a8a8-c4d4dbde0fd8', l='ServerLevel[world]', x=-2352.28, y=62.49, z=-5613.10, cx=-148, cz=-351, tl=41020779, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/868, uuid='d0fd9d1c-5900-44ae-877d-ed46d0ee38bf', l='ServerLevel[world]', x=-2350.96, y=62.50, z=-5605.44, cx=-147, cz=-351, tl=41020876, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/930, uuid='8b9be5ba-2cea-4d6e-9e5d-f241ea5493d3', l='ServerLevel[world]', x=-5572.57, y=103.00, z=-52683.38, cx=-349, cz=-3293, tl=21717614, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/931, uuid='62fc9372-28af-486a-9dbd-d2e483748e54', l='ServerLevel[world]', x=-5574.76, y=103.56, z=-52681.45, cx=-349, cz=-3293, tl=21717599, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/932, uuid='6e1df099-413e-4aa5-99b9-d0270fc3c852', l='ServerLevel[world]', x=-5572.53, y=103.00, z=-52679.70, cx=-349, cz=-3293, tl=21717585, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/934, uuid='d0c9e1f9-b5bc-41cc-964a-2cbd8deae092', l='ServerLevel[world]', x=3761.50, y=79.52, z=1352431.50, cx=235, cz=84526, tl=34539584, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Farmer'/935, uuid='e12973b7-bc6f-4c6d-ab34-a8aada771dc2', l='ServerLevel[world]', x=3761.50, y=79.51, z=1352431.50, cx=235, cz=84526, tl=34544703, v=true, d=false] died, message: 'Farmer fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Farmer'/938, uuid='182ca3d7-8a4a-4aba-9ed9-eae1f7559ddf', l='ServerLevel[world]', x=3748.76, y=79.56, z=1352431.44, cx=234, cz=84526, tl=34837573, v=true, d=false] died, message: 'Farmer fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/939, uuid='e0409b83-756f-4606-a898-b2ab37aaf0eb', l='ServerLevel[world]', x=3747.50, y=79.59, z=1352431.50, cx=234, cz=84526, tl=34194370, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/940, uuid='24e95779-d503-47f7-b408-71e6b31d8056', l='ServerLevel[world]', x=3759.70, y=79.00, z=1352432.69, cx=234, cz=84527, tl=34808250, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Shepherd'/941, uuid='bba28c25-6856-41df-9682-60f8de3483ef', l='ServerLevel[world]', x=3748.50, y=79.56, z=1352430.50, cx=234, cz=84526, tl=34837472, v=true, d=false] died, message: 'Shepherd fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/974, uuid='2c232956-ec46-45df-b7ec-a452bbb78a37', l='ServerLevel[world]', x=-2221.62, y=77.56, z=318.40, cx=-139, cz=19, tl=49494432, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/976, uuid='e92a22e0-67e2-46a4-bce5-efdec5ca177b', l='ServerLevel[world]', x=-2225.51, y=77.10, z=320.54, cx=-140, cz=20, tl=49494518, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/986, uuid='bcbabaf7-3503-44ad-a3be-3b3f05093ec5', l='ServerLevel[world]', x=-5447.39, y=104.00, z=-52779.59, cx=-341, cz=-3299, tl=21726451, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/987, uuid='967c020b-74ea-4de3-8e1c-f12edf981ab2', l='ServerLevel[world]', x=-5450.63, y=104.56, z=-52777.62, cx=-341, cz=-3299, tl=21726417, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/988, uuid='1c25c334-e05b-4765-bf4f-9fdf991d9bdc', l='ServerLevel[world]', x=-5447.50, y=104.56, z=-52773.39, cx=-341, cz=-3299, tl=21726385, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Nitwit'/990, uuid='84eb4915-9865-435a-aa31-acfa89848eb9', l='ServerLevel[world]', x=12593.50, y=95.88, z=125212.50, cx=787, cz=7825, tl=19684346, v=true, d=false] died, message: 'Nitwit fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Nitwit'/991, uuid='836855ea-d166-4f3e-acf2-d1f8fc3d1436', l='ServerLevel[world]', x=12593.50, y=95.88, z=125203.50, cx=787, cz=7825, tl=19683648, v=true, d=false] died, message: 'Nitwit fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/996, uuid='187a8839-2ac5-4fb6-a162-ab65e7989e28', l='ServerLevel[world]', x=-2670.55, y=84.56, z=-5951.38, cx=-167, cz=-372, tl=49498268, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Armorer'/997, uuid='ae18c170-1a7c-4481-a916-2fbf59565d37', l='ServerLevel[world]', x=-2672.59, y=64.00, z=-5941.79, cx=-168, cz=-372, tl=48117175, v=true, d=false] died, message: 'Armorer fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/998, uuid='ef2ea202-e1c5-4c52-80a3-84448249351f', l='ServerLevel[world]', x=-2672.44, y=84.33, z=-5948.49, cx=-168, cz=-372, tl=43311671, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/999, uuid='84925ea6-5a32-46c4-82cf-990237378398', l='ServerLevel[world]', x=-2670.60, y=84.48, z=-5946.39, cx=-167, cz=-372, tl=49498245, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Armorer'/1044, uuid='32d0e244-a880-4bb1-8b3e-23e9bb026e50', l='ServerLevel[world]', x=454.30, y=19.00, z=-2830.30, cx=28, cz=-177, tl=5122370, v=true, d=false] died, message: 'Armorer fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Farmer'/1045, uuid='822fb0f7-6f74-419f-add5-2e38560f8a86', l='ServerLevel[world]', x=459.30, y=19.00, z=-2830.30, cx=28, cz=-177, tl=5100459, v=true, d=false] died, message: 'Farmer fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Librarian'/1046, uuid='1036a559-15c0-49c4-97cc-cd57822c047b', l='ServerLevel[world]', x=456.57, y=19.00, z=-2830.30, cx=28, cz=-177, tl=3734823, v=true, d=false] died, message: 'Librarian fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/1052, uuid='7d0ccf6a-5433-4d4b-82a0-7251312c9bc3', l='ServerLevel[world]', x=-2698.65, y=93.56, z=524.83, cx=-169, cz=32, tl=15593370, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/1053, uuid='60f8f0f6-a817-4192-91f3-b0180f9fca89', l='ServerLevel[world]', x=-2696.25, y=93.56, z=522.48, cx=-169, cz=32, tl=15593182, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/1055, uuid='bda21587-fac9-4a8e-be4b-71a5300f27ab', l='ServerLevel[world]', x=-2700.30, y=93.00, z=522.48, cx=-169, cz=32, tl=15590203, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Villager'/1617, uuid='991d9f9e-e3a8-4c03-86db-3f51ecc76a17', l='ServerLevel[world]', x=-2229.49, y=69.00, z=336.04, cx=-140, cz=21, tl=27728331, v=true, d=false] died, message: 'Villager fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Cleric'/1646, uuid='fda068b6-24e4-4cd0-83a1-fc9eab613de7', l='ServerLevel[world]', x=-2557.52, y=64.00, z=-5757.16, cx=-160, cz=-360, tl=1826318, v=true, d=false] died, message: 'Cleric fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Conversione Smeraldi'/30223, uuid='07c9f612-ba3f-4a2b-902b-98c4fcfc3038', l='ServerLevel[world]', x=268.50, y=68.88, z=49.50, cx=16, cz=3, tl=189082, v=true, d=false] died, message: 'Conversione Smeraldi fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Conversione Smeraldi'/30802, uuid='44473098-1b57-492b-8bf5-590b6f53c830', l='ServerLevel[world]', x=268.50, y=68.88, z=47.50, cx=16, cz=2, tl=187026, v=true, d=false] died, message: 'Conversione Smeraldi fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Acquisti -> Prezzi Fissi'/36180, uuid='ea2155b7-793a-41b3-9de7-1231d62918f4', l='ServerLevel[world]', x=268.50, y=68.88, z=45.50, cx=16, cz=2, tl=171501, v=true, d=false] died, message: 'Acquisti -> Prezzi Fissi fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Acquisti -> Prezzi Fissi'/36182, uuid='1c6d3e74-e5b7-4c59-b586-833574d4ad00', l='ServerLevel[world]', x=268.50, y=68.88, z=43.50, cx=16, cz=2, tl=171485, v=true, d=false] died, message: 'Acquisti -> Prezzi Fissi fell out of the world'
+[15:40:03 INFO]: GocK19 fell out of the world
+[15:40:03 INFO]: Guggi17 fell out of the world
+[15:40:03 INFO]: Villager UserVillager['Nitwit'/977, uuid='8374980a-8ea8-4b90-a69b-12f0ade100ad', l='ServerLevel[world_nether]', x=68.50, y=127.88, z=-347.50, cx=4, cz=-22, tl=26708125, v=true, d=false] died, message: 'Nitwit fell out of the world'
+[15:40:03 INFO]: Villager UserVillager['Nitwit'/978, uuid='13821b2d-c61d-4b68-ad6f-9df4b2b43c12', l='ServerLevel[world_nether]', x=69.50, y=127.88, z=-323.50, cx=4, cz=-21, tl=35676896, v=true, d=false] died, message: 'Nitwit fell out of the world'
+[15:40:03 INFO]: [GocK19: Killed 2328 users]
+[16:03:31 INFO]: Guggi17 lost connection: Disconnected
+[16:03:31 INFO]: Guggi17 left the game
+[16:04:15 INFO]: UUID of player Guggi17 is 9a48d436-2f8e-3582-90e4-412906ae4a64
+[16:04:15 INFO]: Guggi17 joined the game
+[16:04:15 INFO]: Guggi17[/25.85.89.219:65315] logged in with User id 82970 at ([world]109.70942114602306, 62.0, 326.1243076420858)
+[16:05:06 INFO]: GocK19 issued server command: /warp Xfanx
+[16:05:20 INFO]: GocK19 issued server command: /warp list
+[16:05:32 INFO]: GocK19 issued server command: /warplist
+[16:06:20 INFO]: GocK19 issued server command: /trigger spawn
+[16:06:20 INFO]: [GocK19: Triggered [Spawn]]
+[16:06:48 INFO]: Guggi17 lost connection: Disconnected
+[16:06:48 INFO]: Guggi17 left the game
+[16:09:21 INFO]: UUID of player Guggi17 is 9a48d436-2f8e-3582-90e4-412906ae4a64
+[16:09:21 INFO]: Guggi17 joined the game
+[16:09:21 INFO]: Guggi17[/25.85.89.219:61945] logged in with User id 84333 at ([world]110.55901061005741, 62.0, 330.69999998807907)
+[16:10:11 INFO]: GocK19 lost connection: Disconnected
+[16:10:11 INFO]: GocK19 left the game
+[16:12:12 INFO]: UUID of player tzyvoski is 14abc9ad-25b5-3a84-af9e-f4bdd5601f63
+[16:12:12 INFO]: tzyvoski [ABET.nse] joined the game
+[16:12:12 INFO]: tzyvoski[/localhost:54145] logged in with User id 84998 at ([world]218.8849354228611, 64.0, 34.04950320896743)
+[16:12:16 INFO]: tzyvoski lost connection: Disconnected
+[16:12:16 INFO]: tzyvoski left the game
+[16:13:30 INFO]: Guggi17 issued server command: /teleport Guggi17 -6140 72 2162
+[16:13:30 INFO]: [Guggi17: Teleported Guggi17 to -6139.5, 72.0, 2162.5]
+[16:16:33 INFO]: Guggi17 issued server command: /teleport Guggi17 111 65 341
+[16:16:33 INFO]: [Guggi17: Teleported Guggi17 to 111.5, 65.0, 341.5]
+[16:16:56 INFO]: Guggi17 issued server command: /teleport Guggi17 -6140 72 2162
+[16:16:56 INFO]: [Guggi17: Teleported Guggi17 to -6139.5, 72.0, 2162.5]
+[16:20:18 INFO]: Guggi17 issued server command: /teleport Guggi17 111 65 337
+[16:20:18 INFO]: [Guggi17: Teleported Guggi17 to 111.5, 65.0, 337.5]
+[16:21:35 INFO]: Guggi17 issued server command: /teleport Guggi17 -6140 72 2162
+[16:21:35 INFO]: [Guggi17: Teleported Guggi17 to -6139.5, 72.0, 2162.5]
+[16:21:41 INFO]: UUID of player tzyvoski is 14abc9ad-25b5-3a84-af9e-f4bdd5601f63
+[16:21:41 INFO]: tzyvoski [ABET.nse] joined the game
+[16:21:41 INFO]: tzyvoski[/localhost:54321] logged in with User id 87592 at ([world]218.8849354228611, 64.0, 34.04950320896743)
+[16:21:50 INFO]: <Guggi17> ciao
+[16:23:31 INFO]: Guggi17 issued server command: /teleport Guggi17 111 65 337
+[16:23:31 INFO]: [Guggi17: Teleported Guggi17 to 111.5, 65.0, 337.5]
+[16:24:23 INFO]: <tzyvoski> ciao
+[16:24:31 INFO]: <tzyvoski> scusa se non ho risposto subito ma ho fatto una roba con minecraft
+[16:24:42 INFO]: <tzyvoski> ho spostato dlele cartelle e cambiato importazioni ed ho raddoppiato gli FPS :)
+[16:24:56 INFO]: <Guggi17> okk
+[16:25:56 INFO]: <Guggi17> io ne ho trovati altri 2 di parrots e ora li metto in una teca di vetro così non possono scappare o no me li possono rubare o uccidere
+[16:27:31 INFO]: Guggi17 issued server command: /teleport Guggi17 111 65 337
+[16:27:31 INFO]: [Guggi17: Teleported Guggi17 to 111.5, 65.0, 337.5]
+[16:29:47 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:oak_planks
+[16:29:47 INFO]: [tzyvoski [ABET.nse]: Gave 1 [Oak Planks] to tzyvoski [ABET.nse]]
+[16:31:15 INFO]: Guggi17 issued server command: /teleport Guggi17 -6140 72 2162
+[16:31:15 INFO]: [Guggi17: Teleported Guggi17 to -6139.5, 72.0, 2162.5]
+[16:31:25 INFO]: Guggi17 issued server command: /teleport Guggi17 111 65 337
+[16:31:25 INFO]: [Guggi17: Teleported Guggi17 to 111.5, 65.0, 337.5]
+[16:35:32 INFO]: <Guggi17> ale mi posso givvare 2 nametag?
+[16:37:57 INFO]: Guggi17 issued server command: /warp Guggi17 GuggiIron
+[16:38:35 INFO]: Guggi17 issued server command: /teleport Guggi17 111 65 337
+[16:38:35 INFO]: [Guggi17: Teleported Guggi17 to 111.5, 65.0, 337.5]
+[16:39:28 INFO]: tzyvoski issued server command: /gamemode spectator
+[16:39:28 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Spectator Mode]
+[16:39:35 INFO]: Guggi17 issued server command: /give Guggi17 minecraft:name_tag 2
+[16:39:35 INFO]: [Guggi17: Gave 2 [Name Tag] to Guggi17]
+[16:40:08 INFO]: tzyvoski issued server command: /gamemode survival
+[16:40:08 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[16:40:45 INFO]: Guggi17 issued server command: /teleport Guggi17 -6140 72 2162
+[16:40:45 INFO]: [Guggi17: Teleported Guggi17 to -6139.5, 72.0, 2162.5]
+[16:41:12 INFO]: Guggi17 issued server command: /teleport Guggi17 -6140 72 3662
+[16:41:12 INFO]: [Guggi17: Teleported Guggi17 to -6139.5, 72.0, 3662.5]
+[16:43:48 INFO]: tzyvoski issued server command: /gamemode spectator
+[16:43:48 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Spectator Mode]
+[16:44:00 INFO]: Guggi17 issued server command: /teleport Guggi17 111 65 337
+[16:44:00 INFO]: [Guggi17: Teleported Guggi17 to 111.5, 65.0, 337.5]
+[16:44:06 INFO]: tzyvoski issued server command: /gamemode survival
+[16:44:06 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[16:44:41 INFO]: Guggi17 issued server command: /warp Guggi17 GuggiNetherFarm
+[16:44:43 INFO]: tzyvoski issued server command: /gamemode spectator
+[16:44:43 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Spectator Mode]
+[16:44:46 INFO]: tzyvoski issued server command: /gamemode survival
+[16:44:46 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[16:46:39 INFO]: Guggi17 lost connection: Disconnected
+[16:46:39 INFO]: Guggi17 left the game
+[16:47:27 INFO]: tzyvoski issued server command: /gamemode spectator
+[16:47:27 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Spectator Mode]
+[16:47:54 INFO]: tzyvoski issued server command: /gamemode survival
+[16:47:54 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[16:51:08 INFO]: tzyvoski issued server command: /gamemode spectator
+[16:51:08 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Spectator Mode]
+[16:51:10 INFO]: tzyvoski issued server command: /gamemode survival
+[16:51:10 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[16:52:19 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[16:52:19 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[16:54:01 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[16:54:01 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[16:55:08 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[16:55:08 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[16:55:56 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[16:55:56 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[16:56:44 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[16:56:44 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[16:57:41 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[16:57:41 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[16:59:05 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[16:59:05 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[16:59:42 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[16:59:42 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[16:59:54 INFO]: tzyvoski issued server command: /gamemode spectator
+[16:59:54 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Spectator Mode]
+[17:00:46 INFO]: tzyvoski issued server command: /gamemode survival
+[17:00:46 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[17:01:40 INFO]: tzyvoski issued server command: /gamemode creative
+[17:01:40 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Creative Mode]
+[17:01:53 INFO]: tzyvoski issued server command: /gamemode survival
+[17:01:53 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[17:03:44 INFO]: tzyvoski issued server command: /gamemode spectator
+[17:03:44 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Spectator Mode]
+[17:15:09 INFO]: UUID of player Guggi17 is 9a48d436-2f8e-3582-90e4-412906ae4a64
+[17:15:09 INFO]: Guggi17 joined the game
+[17:15:09 INFO]: Guggi17[/25.85.89.219:55744] logged in with User id 100204 at ([world_nether]8060.673222882319, 256.0, 252.57493286986949)
+[17:15:44 INFO]: Guggi17 issued server command: /teleport Guggi17 111 62 337
+[17:15:44 INFO]: [Guggi17: Teleported Guggi17 to 111.5, 62.0, 337.5]
+[17:15:56 INFO]: Guggi17 suffocated in a wall
+[17:17:39 INFO]: Guggi17 issued server command: /warp Guggi17 GuggiNetherFarm
+[17:26:15 INFO]: Guggi17 lost connection: Disconnected
+[17:26:15 INFO]: Guggi17 left the game
+[17:35:31 INFO]: UUID of player Guggi17 is 9a48d436-2f8e-3582-90e4-412906ae4a64
+[17:35:31 INFO]: Guggi17 joined the game
+[17:35:31 INFO]: Guggi17[/25.85.89.219:62932] logged in with User id 102241 at ([world_nether]8060.673222882319, 256.0, 252.57493286986949)
+[17:41:32 INFO]: Guggi17 issued server command: /kill Guggi17
+[17:41:32 INFO]: Guggi17 fell out of the world
+[17:41:32 INFO]: [Guggi17: Killed Guggi17]
+[17:42:02 INFO]: Guggi17 lost connection: Disconnected
+[17:42:02 INFO]: Guggi17 left the game
+[18:09:16 INFO]: tzyvoski issued server command: /gamemode survival
+[18:09:16 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[18:17:11 INFO]: tzyvoski issued server command: /gamemode spectator
+[18:17:11 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Spectator Mode]
+[18:17:15 INFO]: tzyvoski issued server command: /gamemode survival
+[18:17:15 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[18:19:34 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[18:19:34 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[18:20:29 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[18:20:29 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[18:21:27 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[18:21:27 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[18:21:34 INFO]: UUID of player Guggi17 is 9a48d436-2f8e-3582-90e4-412906ae4a64
+[18:21:34 INFO]: Guggi17 joined the game
+[18:21:34 INFO]: Guggi17[/25.85.89.219:55414] logged in with User id 105157 at ([world]111.37715030015795, 62.0, 321.1826398998287)
+[18:21:50 INFO]: <tzyvoski> ciao
+[18:21:56 INFO]: <Guggi17> ciao
+[18:22:10 INFO]: <tzyvoski> ciao
+[18:22:12 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[18:22:12 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[18:22:35 INFO]: <Guggi17> ora ti mando una foto su watsapp ti prego guardala
+[18:23:01 INFO]: tzyvoski issued server command: /give tzyvoski minecraft:spruce_leaves 64
+[18:23:01 INFO]: [tzyvoski [ABET.nse]: Gave 64 [Spruce Leaves] to tzyvoski [ABET.nse]]
+[18:23:08 INFO]: <Guggi17> ale?
+[18:23:23 INFO]: <tzyvoski> ok
+[18:23:57 INFO]: tzyvoski issued server command: /gamemode spectator
+[18:23:57 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Spectator Mode]
+[18:24:33 INFO]: Guggi17 issued server command: //calculate
+[18:24:41 INFO]: Guggi17 issued server command: //calculate 63+9
+[18:27:38 INFO]: Guggi17 issued server command: //calculate 72*250000
+[18:28:50 INFO]: Guggi17 issued server command: //calculate 18000000+90000+50000+1000
+[18:29:14 INFO]: Guggi17 issued server command: /scoreboard players add Guggi17 Liquidi 2000000
+[18:29:14 INFO]: [Guggi17: Added 2000000 to [Liquidi] for Guggi17 (now 18141000)]
+[18:29:21 INFO]: tzyvoski issued server command: /gamemode survival
+[18:29:21 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Survival Mode]
+[18:29:50 INFO]: <Guggi17> ale dimmi 3 coord a caso
+[18:30:00 INFO]: <tzyvoski> 312312 100 32343
+[18:30:09 INFO]: tzyvoski issued server command: /tp Guggi17 tzyvoski
+[18:30:09 INFO]: [tzyvoski [ABET.nse]: Teleported Guggi17 to tzyvoski [ABET.nse]]
+[18:30:15 INFO]: <tzyvoski> cos'è successo qui?
+[18:30:41 INFO]: <Guggi17> perché mi hai tippato alla banca?
+[18:30:46 INFO]: <tzyvoski> cos'è successo qui?
+[18:31:08 INFO]: <tzyvoski> NON CI SONO PIÙ I VILLAGER. Chi li ha toccati?
+[18:31:19 INFO]: <tzyvoski> (Sei l'unico ad essere stato sul server quindi o sei tu o è un bug)
+[18:31:34 INFO]: <Guggi17> io fino a 2 min fa stavo a vedere la tv e tenevo mc afk alla farm fìdi oro
+[18:31:39 INFO]: tzyvoski issued server command: /gamemode creative
+[18:31:39 INFO]: [tzyvoski [ABET.nse]: Set own game mode to Creative Mode]
+[18:31:50 INFO]: <Guggi17> te lo posso giurare
+[18:32:23 INFO]: <tzyvoski> ok
+[18:32:23 INFO]: <Guggi17> probabilmente è successa la stessa cosa che è successa ai miei pappagalli
+[18:32:50 INFO]: <tzyvoski> aspetta
+[18:33:02 INFO]: <tzyvoski> CHI CAZZO HA FATTO KILL @E??????
+[18:33:26 INFO]: tzyvoski issued server command: /ban Guggi17 mi dispiace ma mi sa che rimarrai fuori per un bel po'
+[18:33:26 INFO]: [tzyvoski [ABET.nse]: Banned Guggi17: mi dispiace ma mi sa che rimarrai fuori per un bel po']
+[18:33:26 INFO]: Guggi17 lost connection: You are banned from this server
+[18:33:26 INFO]: Guggi17 left the game
+[18:33:41 INFO]: UUID of player Guggi17 is 9a48d436-2f8e-3582-90e4-412906ae4a64
+[18:33:41 INFO]: Disconnecting com.mojang.authlib.GameProfile@7b840109[id=9a48d436-2f8e-3582-90e4-412906ae4a64,name=Guggi17,properties={textures=[com.mojang.authlib.properties.Property@1d20b597]},legacy=false] (/25.85.89.219:55795): You are banned from this server.
+Reason: mi dispiace ma mi sa che rimarrai fuori per un bel po'
+[18:33:41 INFO]: com.mojang.authlib.GameProfile@7b840109[id=9a48d436-2f8e-3582-90e4-412906ae4a64,name=Guggi17,properties={textures=[com.mojang.authlib.properties.Property@1d20b597]},legacy=false] (/25.85.89.219:55795) lost connection: You are banned from this server.
+Reason: mi dispiace ma mi sa che rimarrai fuori per un bel po'
+[18:34:57 INFO]: tzyvoski issued server command: /warp zonaindustriale
+[18:35:19 INFO]: UUID of player GocK19 is 42f518b8-5755-314d-b2c7-464f03fff895
+[18:35:19 INFO]: GocK19 joined the game
+[18:35:19 INFO]: GocK19[/25.73.139.57:64853] logged in with User id 108903 at ([world]481.9326049633792, 63.0, -2824.3963706119353)
+>
 
-
-Server Raised Exception
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
-user AndrySpartan issued server command 'borsa'
-user AndrySpartan issued server command 'aiuto'
-('25.85.89.219', 62512) is now connected to the server
-
-
-Server Raised Exception
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
-user BBNK.NSE issued server command 'aiuto'
-('25.85.89.219', 62515) is now connected to the server
-user AndrySpartan issued server command 'portafoglio'
-
-
-Server Raised Exception
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
-('25.85.89.219', 62519) is now connected to the server
-user  NETHP.NSE tried to log in!
-andry = db.entities["AndrySpartan"]
-
-
-Server Raised Exception:
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
- NETHP.NSE lost connection
-('25.85.89.219', 62520) is now connected to the server
-andry.portfolio.__setitem__("NGP.NSE", 7500)
-NETHP.NSE joined with IP address ('25.85.89.219', 62520) and password 'nether'
-user NETHP.NSE issued server command 'borsa'
-abet = db.entities["ABET.NSE"]
-abet.portfolio.__setitemuser NETHP.NSE issued server command 'portafoglio'
-print(abet.protfolio)
-'Entity' object has no attribute 'protfolio'
-print(abet.portfolio)
-{'ABET.NSE': 100000000}
-abet.portfolio.__setitem__("NGP.NSE", 50000)
-('25.80.62.167', 55175) is now connected to the server
-ABET.NSE joined with IP address ('25.80.62.167', 55175) and password 'Loryvoski2020'
-user ABET.NSE issued server command 'portafoglio'
-user AndrySpartan issued server command 'compra'
-
-
-Server Raised Exception:
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
-user AndrySpartan issued server command 'vendi'
-
-
-Server Raised Exception:
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
-AndrySpartan lost connection
-('25.36.101.241', 53117) is now connected to the server
-AndrySpartan joined with IP address ('25.36.101.241', 53117) and password 'andry'
-user AndrySpartan issued server command 'portafoglio'
-user AndrySpartan issued server command 'borsa'
-user NETHP.NSE issued server command 'vendi'
-user NETHP.NSE issued server command 'vendi'
-user NETHP.NSE issued server command 'vendi'
-user NETHP.NSE issued server command 'vendi'
-user AndrySpartan issued server command 'vendi'
-user AndrySpartan issued server command 'compra'
-user NETHP.NSE issued server command 'vendi'
-user NETHP.NSE issued server command 'vendi'
-
-
-Server Raised Exception:
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
-ABET.NSE lost connection
-user NETHP.NSE issued server command 'vendi'
-user BBNK.NSE issued server command 'compra'
-user BBNK.NSE issued server command 'compra'
-user BBNK.NSE issued server command 'compra'
-user BBNK.NSE issued server command 'compra'
-user AndrySpartan issued server command 'compra'
-user BBNK.NSE issued server command 'portafoglio'
-user BBNK.NSE issued server command 'vendi'
-('25.80.62.167', 55236) is now connected to the server
-tzyvoski joined with IP address ('25.80.62.167', 55236) and password 'Almirox2005'
-user tzyvoski issued server command 'compra'
-db.entities["tzyvoski"].balance += 10_000_000
-user tzyvoski issued server command 'portafoglio'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'compra'
-
-
-Server Raised Exception:
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
-AndrySpartan lost connection
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'compra'
-user BBNK.NSE issued server command 'vendi'
-user BBNK.NSE issued server command 'vendi'
-user BBNK.NSE issued server command 'compra'
-
-
-Server Raised Exception:
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
-NETHP.NSE lost connection
-('25.85.89.219', 62550) is now connected to the server
-('25.36.101.241', 53180) is now connected to the server
-NETHP.NSE joined with IP address ('25.85.89.219', 62550) and password 'nether'
-user NETHP.NSE issued server command 'borsa'
-AndrySpartan joined with IP address ('25.36.101.241', 53180) and password 'andry'
-user AndrySpartan issued server command 'borsa'
-user AndrySpartan issued server command 'compra'
-
-
-Server Raised Exception:
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
-NETHP.NSE lost connection
-user BBNK.NSE issued server command 'borsa'
-db.stocks["NETHP.NSE"].ipo = 80
-db.stocks["NETHP.NSE"].month = 80
-db.stocks["NETHP.NSE"].prec = 80
-user BBNK.NSE issued server command 'borsa'
-user BBNK.NSE issued server command 'portafoglio'
-user tzyvoski issued server command 'portafoglio'
-('25.80.62.167', 55261) is now connected to the server
-ABET.NSE joined with IP address ('25.80.62.167', 55261) and password 'Loryvoski2020'
-user ABET.NSE issued server command 'vendi'
-user ABET.NSE issued server command 'vendi'
-user AndrySpartan issued server command 'portafoglio'
-user ABET.NSE issued server command 'vendi'
-user ABET.NSE issued server command 'vendi'
-user BBNK.NSE issued server command 'compra'
-user BBNK.NSE issued server command 'compra'
-print(dmm.balance)
-name 'dmm' is not defined
-print(db.dmm.balance)
-774007.6799999999
-user AndrySpartan issued server command 'compra'
-user AndrySpartan issued server command 'portafoglio'
-
-
-Server Raised Exception:
-        [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
-AndrySpartan lost connection
-user BBNK.NSE issued server command 'compra'
-user BBNK.NSE issued server command 'borsa'
-user BBNK.NSE issued server command 'portafoglio'
-user ABET.NSE issued server command 'portafoglio'
-db.saveall()
-print(db.dmm.balance)
-779707.6799999999
-user BBNK.NSE issued server command 'compra'
-user BBNK.NSE issued server command 'portafoglio'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'compra'
-user BBNK.NSE issued server command 'portafoglio'
-user tzyvoski issued server command 'portafoglio'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'portafoglio'
-
-user tzyvoski issued server command 'borsa'
-db.saveall()
-user tzyvoski issued server command 'compra'
-1 / 0
-division by zero
- ser tzyvoski issued server command 'vendi'
-user tzyvoski issued server command 'vendi'
-user tzyvoski issued server command 'compra'
-user ABET.NSE issued server command 'vendi'
-user ABET.NSE issued server command 'vendi'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'portafoglio'
-user tzyvoski issued server command 'compra'
-user tzyvoski issued server command 'portafoglio'
-user ABET.NSE issued server command 'portafoglio'
-user ABET.NSE issued server command 'compra'
-user ABET.NSE issued server command 'compra'
-user tzyvoski issued server command 'borsa'
-user tzyvoski issued server command 'vendi'
-user ABET.NSE issued server command 'compra'
-user tzyvoski issued server command 'portafoglio'
-user tzyvoski issued server command 'borsa'
-user tzyvoski issued server command 'portafoglio'
-user BBNK.NSE issued server command 'vendi'
-user tzyvoski issued server command 'compra'
-db.saveall()
-user ABET.NSE issued server command 'portafoglio'
-user tzyvoski issued server command 'borsa'
-user tzyvoski issued server command 'portafoglio'
-print(db.dmm.balance)
-849760.6799999999
-user ABET.NSE issued server command 'compra'
-user ABET.NSE issued server command 'compra'
-user tzyvoski issued server command 'portafoglio'
-user tzyvoski issued server command 'vendi'
-user ABET.NSE issued server command 'portafoglio'
-user tzyvoski issued server command 'vendi'
-user ABET.NSE issued server command 'compra'
-user ABET.NSE issued server command 'portafoglio'
-user ABET.NSE issued server command 'vendi'
-user tzyvoski issued server command 'compra'
-user ABET.NSE issued server command 'portafoglio'
-user ABET.NSE issued server command 'compra'
-user tzyvoski issued server command 'portafoglio'
-user ABET.NSE issued server command 'vendi'
-user tzyvoski issued server command 'compra'
-user ABET.NSE issued server command 'portafoglio'
-user ABET.NSE issued server command 'compra'
-db.saveall()
-user tzyvoski issued server command 'portafoglio'
-user tzyvoski issued server command 'borsa'
-db.saveall()
-user BBNK.NSE issued server command 'compra'
-db.saveall()

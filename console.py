@@ -26,7 +26,7 @@ def recieve():
 def write():
     while True:
         message = input("> ")
-        client.send(message.replace("> ", "").encode("utf-8"))
+        client.sendall(message.replace("> ", "").encode("utf-8"))
 
 
 recieve_thread = threading.Thread(target=recieve)
