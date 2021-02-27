@@ -116,7 +116,8 @@ if r is not False:
     market.pop(r)
 """,
 
-    "aiuto": "commands.help(client)"
+    "aiuto": "commands.help(client)",
+    "paga": "commands.pay(client, name, users)"
 }
 
 

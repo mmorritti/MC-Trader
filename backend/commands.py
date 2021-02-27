@@ -172,6 +172,7 @@ def help(client):
         "vendi"      : ["Permette di vendere titoli"                                     , "Ticker del titolo, quantita' e prezzo per titolo"],
         "compra"     : ["Permette di acquistare titoli dal mercato"                      , "ID dell'ordine di vendita"],
         "aiuto"      : ["Mostra questa pagina"                                           , "Nessun parametro"],
+        "paga"       : ["Permette di pagare direttamente ad una persona o società"       , "Destinatario, somma"]
     }
 
     for command in commands:
@@ -193,3 +194,35 @@ Il mercato del server è sicuro e robusto, anche in caso di perdita la maggior p
 """
 
     client.sendall(string.encode("utf-8"))
+
+
+def pay(client, name, users):
+    client.sendall("Inserire il nome di chi si vuole pagare\n".encode("utf-8"))
+    client.sendall("[Internal] CLN_ASK".encode("utf-8"))
+    who = str(client.recv(1024).decode("utf-8"))
+
+    if who not in users:
+        client.sendall("Il nome specificato non esiste\n\n".encode("utf-8"))
+        return False
+
+    client.sendall("Specificare la dimensione della transazione\n".encode("utf-8"))
+    client.sendall("[Internal] CLN_ASK".encode("utf-8"))
+    payment = int(client.recv(1024).decode("utf-8"))
+
+    try:
+        if not float(payment) == payment:
+            if not int(payment) == payment:
+                client.sendall("La somma specificata non è valida\n".encode("utf-8"))
+                return False
+    except: 
+        client.sendall("La somma specificata non è valida\n".encode("utf-8"))
+        return False
+    
+    try:
+        payer = users[name]
+        payer.pay(who, payment)
+        client.sendall("Transazione effettuata con successo!\n".encode("utf-8"))
+        return True
+    except: 
+        client.sendall("Transazione fallita\n".encode("utf-8"))
+        return False

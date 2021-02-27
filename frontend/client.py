@@ -94,7 +94,6 @@ Descrizione: {e}
 Data: {datetime.now()}
 Ultima connessione: {last_seen}
 
-
 Cosa fare
 ---------
 Almeno che l'errore non sia "Connessione interrotta forzatamente dall'host remoto" si chiede di inoltrare questo messaggio a tzyvoski!
